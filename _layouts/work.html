@@ -1,0 +1,18 @@
+---
+layout: default
+---
+  <article class="article">
+    <header class="post-header">
+      <img src="{{ page.img }}" alt="">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories %} • {{ page.categories }}{% endif %}</p>
+    </header>
+
+    <section class="post-content">
+      {{ content }}
+    </section>
+  </article>
+
+  
+
+
