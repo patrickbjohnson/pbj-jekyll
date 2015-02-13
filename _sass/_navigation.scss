@@ -1,0 +1,22 @@
+.site-header {
+  width: 100%;
+  text-align: center;
+  @media (min-width: 400px){text-align: left;}
+}
+
+.site-title {
+  @media (min-width: 400px){
+    float: left;  
+  }
+  
+}
+
+
+.site-nav {
+  @media (min-width: 400px){
+    float: right;  
+  }
+  
+}
+
+// .site-title {float: right;}

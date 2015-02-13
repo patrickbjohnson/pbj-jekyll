@@ -8,10 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-// .site-header {
-//     @include span(2);
-// }
-
 
 /**
  * Basic styling
@@ -66,10 +62,7 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
+ ol, ul {list-style: none;}
 li {
     > ul,
     > ol {
