@@ -7,10 +7,11 @@
 @import 'bourbon';
 @import 'neat';
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
+$base-font-weight: 300;
 
 $spacing-unit:     30px;
 
@@ -24,7 +25,6 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -47,11 +47,17 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "variables",
-        "base",
-        "layout",
-        "images",
-        "navigation",
-        "syntax-highlighting",
-        "general"
+    "variables",
+    "helpers",
+    "social",
+    "base",
+    "layout",
+    "buttons",
+    "images",
+    "navigation",
+    "footer",
+    "syntax-highlighting",
+    "general",
+    "typography",
+    "titles"
 ;

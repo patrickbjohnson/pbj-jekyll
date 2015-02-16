@@ -3,11 +3,12 @@ layout: default
 ---
 <section class="content">
   <figure class="page-hero">
-    <img src="/uploads/pbj-md.jpg" alt="">
-    <figcaption><a href="#">Technodrome</a></figcaption>
+    <img src="/uploads/pbj.jpg" alt="">
+    <figcaption><a class="credit" href="#">Technodrome</a></figcaption>
   </figure>
-  <h1 class="text-center">{{ site.title }}</h1>
-  <p>{{ site.bio }}</p>
+  <div class="post-meta">
+     <h1 class="text-center">{{ site.title }}</h1>
+  </div>
 </section>
 <section class="content">
   <div class="page-list">
@@ -15,7 +16,7 @@ layout: default
     <ul>
       {% for work in site.work %}
       <li>
-        <a href="{{ work.url }}">{{work.title}}</a>
+        <a href="{{ work.site_url }}">{{work.title}}</a>
       </li>
       {% endfor %}
     </ul>
@@ -25,7 +26,12 @@ layout: default
     <ul>
       {% for goal in site.goals %}
       <li>
-        <a href="{{ goal.url }}">{{goal.title}}</a>
+
+                {% if goal.display == 'active' %}
+                <a href="{{goal.url}}">{{goal.title}}</a>
+                {% else  %}
+                <p>{{goal.title}}</p>
+                {% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -41,8 +47,3 @@ layout: default
     </ul>
   </div>
 </section>
-
-
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-

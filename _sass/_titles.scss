@@ -1,0 +1,18 @@
+.post-meta {
+	margin: 25px 0;
+	li {
+		display: inline-block;
+		font-size: em(14px);
+		color: $gray;
+		margin: 0;
+		&:after {
+			content: "//";
+			margin-left: 10px;
+			margin-right: 5px;
+
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+}

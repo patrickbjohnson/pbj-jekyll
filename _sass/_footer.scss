@@ -1,0 +1,11 @@
+footer {
+	margin-top: 100px;
+	text-align: center;
+	.nav-right {
+	  display: none;
+	  @media (min-width: 400px){
+	    display: block;
+
+	  }
+	}
+}

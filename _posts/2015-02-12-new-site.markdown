@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Finally A \"New\" Site"
+date:   2015-02-12 13:40:47
+categories: ['jekyll', 'update']
+img: https://unsplash.imgix.net/photo-1414005987108-a6d06de8769f?q=75&fm=jpg&s=b37798a9dbd0c8884af2261b518970e3
+
+---
+It took me forever but I finally built a "new" site. When I say "new" I just mean something that wasn't a landing page with basically nothing on it. 
+
+This is a bit more built out, granted nothing that's worth a huge award or "ohh-ing" and "aww-ing". Just something that is better than what I had before and is an actual system that allows editing/updating to happen a lot easier. 
+
+For this site, I decided to build on a static CMS I haven't tried before - Jekyll. 
+
+I'm familar with liquid templating but haven't really used it too much and figured this would be a great opportunity to get into something new for a quick weekend project. 
+
+I'm hoping this new site and CMS will enable me to write more and document my work frequently. I'm totally aware this won't *make* me write, but considering it's pretty easy, maybe I'll be more open to the idea of documenting the stuff I do in my life, personally and professionally. 

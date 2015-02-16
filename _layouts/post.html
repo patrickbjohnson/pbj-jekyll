@@ -3,20 +3,21 @@ layout: default
 ---
 <article class="article">
     <header class="post-header">
-      <img src="{{ page.img }}" alt="">
+      {% if page.img%}
+      <figure class="page-hero">
+        <img src="{{ page.img }}" alt="{{page.title}}">
+      </figure>
+      {% endif %}
       
       <div class="post-meta text-center">
-        <h1 class="post-meta">{{ page.title }}</h1>
-        <ul>
-          <li>{{ page.date | date: "%b %-d, %Y" }}</li>
-          <li>{% if page.meta %}{{ page.meta }}{% endif %}</li>
-          <li>{% if page.categories %}{{ page.categories }}{% endif %}</li>
-        </ul>
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+          <small>{{ page.date | date: "%b %-d, %Y" }}</small>
+        {% endif %}
       </div>
-      <p class="post-meta"></p>
     </header>
 
     <section class="content">
       {{ content }}
     </section>
-  </article>
+</article>

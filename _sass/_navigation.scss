@@ -4,19 +4,35 @@
   @media (min-width: 400px){text-align: left;}
 }
 
+nav {
+  li {display: inline-block; margin: 0 10px;}
+  a {font-size: em(14px);}
+}
+
+.nav-left {
+  li:first-child {margin-left: 0;}
+  li:last-child {margin-right: 0;}
+  @media (min-width: 400px){
+    float: left;  
+  }  
+}
+.nav-right {
+  li:last-child {@include omega;}
+  @media (min-width: 400px){
+    float: right;  
+  }  
+}
+
 .site-title {
   @media (min-width: 400px){
     float: left;  
   }
-  
 }
 
-
-.site-nav {
-  @media (min-width: 400px){
-    float: right;  
+.ss-icon {
+  li {margin: 0 5px;}
+  a {
+    font-size: em(16px);
+    &:after {display: none;}
   }
-  
 }
-
-// .site-title {float: right;}
