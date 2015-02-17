@@ -59,7 +59,14 @@ dd {margin-bottom: 50px;}
 	margin-bottom: 15px;
 }
 
+.writing-list--title,
 .goals-list--title {
 	font-size: em(24px);
 	margin-bottom: 5px;
 }
+
+.footnote,
+.footnotes {
+	font-size: (12px);
+}
+.footnote {margin-left: 3px;}

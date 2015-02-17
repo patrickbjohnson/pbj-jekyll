@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "2015 The Goals List"
-date:   2015-02-15
-img: 'https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c'
-categories: goals
+date:   2015-02-01
 project_type: goals
-summary: "The Goals List - A new idea to document, and try to achieve, goals I've set for the year."
+permalink: /writing/goals
+summary: "The Goals List - A new way to plan, document, achieve, goals I've set for the year."
 display: active
 ---
 An idea came to me at the end of 2014 - in 2015 I would create one thing each month. 

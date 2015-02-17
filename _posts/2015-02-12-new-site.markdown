@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Finally A \"New\" Site"
-date:   2015-02-12 13:40:47
-categories: ['jekyll', 'update']
-img: https://unsplash.imgix.net/photo-1414005987108-a6d06de8769f?q=75&fm=jpg&s=b37798a9dbd0c8884af2261b518970e3
-
+date:   2015-01-31
+img: "http://media1.giphy.com/media/MQQwcpjOLD64U/giphy.gif"
+permalink: /writing/new-site
+summary: I finally got around to making a new site!
 ---
 It took me forever but I finally built a "new" site. When I say "new" I just mean something that wasn't a landing page with basically nothing on it. 
 

@@ -10,15 +10,14 @@ summary: "I created a cookie tasting serious called Beta Tasting to brings frien
 display: active
 cta: Get Tickets
 ---
-The month of February I'm organizing a cookie-tasting event called Beta Tasting.
+The goal for February is dedicated to cookies.
 
-Some of you know I bake cookies. Some of you just found out and you've missed out on a lot. 
+I began baking cookies as a way to just do something completely removed from development and its grown into something  I really enjoy doing.
 
-In an attempt to get feedback I often baked cookies and shared them with my friends. Since most friends are tech-folk we dubbed it *Beta Tasting*.
+To get feedback and make these cookies better, I'm starting a monthly tasting series called ***Beta Tasting***. The idea is to bring friends together to hang out, have some fun and enjoy some good cookies.
 
-From there *Beta Tasting* was born and is now looking to be a monthly event bringing friends and cookie-lovers together to nom-nom on some delicious baked goods. 
+The first Beta Tasting is happening on ***March 8***.
 
-The first *Beta Tasting* is happening on March 8.
+If you can't make this one, <a href="http://pbj.im/spiltmilksignup" target="_blank">sign up to the mailing list to get notified of the next event</a>.
 
 <a href="{{page.site_url}}" class="btn btn-project" target="_blank">{{page.cta}}</a>
-

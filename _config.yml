@@ -1,7 +1,7 @@
 # Site settings
 title: Patrick Johnson
 email: im@pbj.me
-description: This is a site description. Change this in the _config.yml file.
+description: Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.
 baseurl: "" # the subpath of your site, e.g. /blog/
 imgurl: '/uploads/'
 url: "http://pbj.me" # the base hostname & protocol for your site
@@ -9,7 +9,6 @@ twitter: patrickbjohnson
 github:  patrickbjohnson
 dribbble:  pbj
 linkedin:  patrickbjohnson
-bio: Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.
 
 # Collections
 collections:

@@ -4,7 +4,7 @@ layout: default
 <section class="content">
   <figure class="page-hero">
     <img src="/uploads/pbj.jpg" alt="">
-    <figcaption><a class="credit" href="#">Technodrome</a></figcaption>
+    <figcaption><a class="credit" href="http://technodrome1.tumblr.com/" target="_blank">Technodrome</a></figcaption>
   </figure>
   <div class="post-meta">
      <h1 class="text-center">{{ site.title }}</h1>
@@ -16,7 +16,7 @@ layout: default
     <ul>
       {% for work in site.work %}
       <li>
-        <a href="{{ work.site_url }}">{{work.title}}</a>
+        <a href="{{ work.site_url }}" target="_blank">{{work.title}}</a>
       </li>
       {% endfor %}
     </ul>
