@@ -10,12 +10,15 @@ summary: "In January I built a website for a new, micro-season restaurant, Alman
 display: none
 cta: Visit Project
 ---
-Throughout January I wokred with Hammer + Nail and Almanac to bring this new west-village restaurant to life online. 
+In January I partnered with agency Hammer + Nail to create a digital experience for a new, west-village restaurant, Almanac. 
 
-We created a site that brings the most important thing foward: *the food*. 
+Almanac isn’t just another restaurant. The Chef is top-chef contestant Galen Zamarra and his take on micro-seasons fits perfectly into Almanac’s tasting-menu style of dining. 
 
-We decided to use Wordpress for its solid foundation and quick development to build a site that was both beautiful and functional. 
+Almanac didn’t want a typical restaurant menu, they wanted to focus on the most important part: *the food and people*.
 
-The first thing our client wanted was an easily-managed site. Considering anyone on the team may update the sites menu or content, they needed something intuitive and clear. 
+Understanding their clientele, Almanac knew they needed a mobile-first site with a menu conducive to phones and bandwidth. No longer do you have to download bit, clunky PDFs on Almanac’s site. Now you can just load up the menu page and check out the menu on any given night. 
+
+If you haven’t been its definitely worth experiencing a micro-seasonal tasting menu.  
+
 
 <a class="btn btn-project" href="{{page.site_url}}" target="_blank">{{page.cta}}</a>

@@ -12,7 +12,7 @@ layout: default
 </section>
 <section class="content">
   <div class="page-list">
-    <h2>Projects</h2>
+    <h2>Work</h2>
     <ul>
       {% for work in site.work %}
       <li>
@@ -25,13 +25,12 @@ layout: default
     <h2>Goals</h2>
     <ul>
       {% for goal in site.goals %}
-      <li>
-
-                {% if goal.display == 'active' %}
-                <a href="{{goal.url}}">{{goal.title}}</a>
-                {% else  %}
-                <p>{{goal.title}}</p>
-                {% endif %}
+      <li>  
+        {% if goal.display == 'active' %}
+          <a href="{{goal.url}}">{{goal.title}}</a>
+        {% else  %}
+          {{goal.title}}
+        {% endif %}
       </li>
       {% endfor %}
     </ul>

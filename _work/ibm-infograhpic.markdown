@@ -7,6 +7,3 @@ img: 'https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&
 categories: responsive mobile front-end
 project_type: website
 ---
-Text 100 approached me with a fun project with a short deadline for their client, IBM.
-
-IBM and Gartner wanted back their story around Data Centric design with something more than a simple static landing page. 
