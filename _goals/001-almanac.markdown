@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "001 - Almanac & Foundation"
+title:  "Try a new framework"
 date:   2015-01-31
 site_url:   "http://www.almanacnyc.com"
 img: '/uploads/foundation.jpg'

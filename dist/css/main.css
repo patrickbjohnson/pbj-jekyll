@@ -431,7 +431,7 @@ article header {
   text-align: center; }
   .page-list:last-child {
     margin-right: 0; }
-  @media (min-width: 400px) {
+  @media (min-width: 600px) {
     .page-list {
       float: left;
       display: block;
@@ -492,7 +492,7 @@ figcaption {
 .site-header {
   width: 100%;
   text-align: center; }
-  @media (min-width: 400px) {
+  @media (min-width: 800px) {
     .site-header {
       text-align: left; } }
 
@@ -500,25 +500,35 @@ nav li {
   display: inline-block;
   margin: 0 10px; }
 nav a {
-  font-size: 0.77778em; }
+  font-size: 0.77778em;
+  text-decoration: none; }
+  nav a:after {
+    display: none; }
+  @media (min-width: 800px) {
+    nav a:after {
+      display: block; } }
 
 .nav-left li:first-child {
   margin-left: 0; }
 .nav-left li:last-child {
   margin-right: 0; }
-@media (min-width: 400px) {
+@media (min-width: 800px) {
   .nav-left {
     float: left; } }
 
 .nav-right li:last-child {
   margin-right: 0; }
-@media (min-width: 400px) {
+@media (min-width: 800px) {
   .nav-right {
     float: right; } }
 
-@media (min-width: 400px) {
+.site-title:after {
+  display: none; }
+@media (min-width: 800px) {
   .site-title {
-    float: left; } }
+    float: left; }
+    .site-title:after {
+      display: block; } }
 
 .ss-icon li {
   margin: 0 5px; }
@@ -715,8 +725,6 @@ a {
   position: relative;
   color: #545454;
   text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
   a:after {
     content: "";
     display: block;
@@ -724,14 +732,27 @@ a {
     left: 0;
     bottom: -3px;
     height: 1px;
-    width: 0;
+    width: 100%;
     background: #545454;
-    z-index: 0;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    transition: all 300ms ease; }
-  a:hover:after {
-    width: 100%; }
+    z-index: 0; }
+  a:hover {
+    text-decoration: none; }
+  @media (min-width: 800px) {
+    a:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 1px;
+      width: 0;
+      background: #545454;
+      z-index: 0;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      transition: all 300ms ease; }
+    a:hover:after {
+      width: 100%; } }
 
 dl {
   margin-top: 25px; }

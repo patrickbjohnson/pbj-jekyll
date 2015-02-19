@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "003 - The Start FM"
+title:  "3rd Season of The Start"
 date:   2015-02-01
 site_url:   "https://www.eventbrite.com/e/spilt-milk-beta-tasting-1-tickets-5659271032"
 img: '/uploads/spilt-milk.jpg'
