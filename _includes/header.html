@@ -1,13 +1,10 @@
-<header class="site-header block">
-  <div class="container">
+<header class="header">
     {% if page.url != "/index.html" %}
-       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
+     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
     {% endif %}
-    
-
-    <nav class="nav-right">
-      <ul>
-        {% for page in site.pages %}
+  <nav class="nav nav-main">
+    <ul>
+      {% for page in site.pages %}
           {% unless page.url == '/404.html' %}
             {% if page.title %}
               <li>
@@ -16,7 +13,6 @@
             {% endif %}
           {% endunless %}
         {% endfor %}
-      </ul>
-    </nav>
-  </div>
+    </ul>
+  </nav>
 </header>

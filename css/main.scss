@@ -47,6 +47,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+    "reset",
     "variables",
     "helpers",
     "social",
@@ -59,5 +60,6 @@ $on-laptop:        800px;
     "syntax-highlighting",
     "general",
     "typography",
-    "titles"
+    "articles",
+    "lists"
 ;

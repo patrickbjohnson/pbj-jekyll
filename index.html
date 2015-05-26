@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<section class="content">
-  <figure class="page-hero">
+<section class="block">
+  <figure class="hero">
     <img src="/uploads/pbj.jpg" alt="">
-    <figcaption><a class="credit" href="http://technodrome1.tumblr.com/" target="_blank">Technodrome</a></figcaption>
+    <figcaption class="caption"><a class="credit" href="http://technodrome1.tumblr.com/" target="_blank">Technodrome</a></figcaption>
   </figure>
-  <div class="post-meta">
-     <h1 class="text-center">{{ site.title }}</h1>
+  <div class="article-meta">
+     <h1>{{ site.title }}</h1>
   </div>
 </section>
-<section class="content">
-  <div class="page-list">
-    <h2>Work</h2>
+<section class="block">
+  <div class="list">
+    <h2 class="list-title">Work</h2>
     <ul>
       {% for work in site.work %}
       <li>
@@ -21,8 +21,8 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-  <div class="page-list">
-    <h2>2015 Goals</h2>
+  <div class="list">
+    <h2 class="list-title">2015 Goals</h2>
     <ul>
       {% for goal in site.goals %}
       <li>  
@@ -35,8 +35,8 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-  <div class="page-list">
-    <h2>Writing</h2>
+  <div class="list">
+    <h2 class="list-title">Writing</h2>
     <ul>
       {% for post in site.posts %}
       <li>

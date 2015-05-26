@@ -1,51 +1,25 @@
 html,
 body {height: 100%;}
 
-
-header,
-footer,
-.content {
+.container {
   @include outer-container(800px);
-  padding: 0 5% 5%;
+  padding: 5%;
   display: block;
   margin: auto;
-  @media(min-width: 400px){padding: 0 20px 20px 20px;}
+  @media(min-width: 400px){padding:1%;}
 }
 
-article header {padding-bottom: 0;}
-.site-header {
-  padding-top: 5%;
-  @media(min-width: 400px){padding-top: 20px;}
-}
-.content {margin-bottom: 50px;}
-
-.content-full {
-  @include span-columns(10);
-  @include shift(2);
-}
-
-.page-hero img{width: 100%;}
-.page-list {
+.header,
+.footer,
+.block {
   @include span-columns(12);
-  margin-bottom: 25px;
-  text-align: center;
-  @media (min-width: 600px){
-    @include span-columns(4);
-  }
+  @include omega();
+  margin-bottom: 5%;
 }
 
+.footer {margin-bottom: 0;}
 
-.writing-list,
-.goals-list {
-  max-width: 450px;
-  margin: 50px auto;
-  li {margin-bottom: 25px;}
-}
 
-ul, ol {
-  margin-bottom: 15px;
-  li {margin-bottom: 10px;}
-}
 
 
 .hire-me--faq {

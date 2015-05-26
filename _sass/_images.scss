@@ -1,14 +1,15 @@
-figure {
-  display: block;
-  max-height: 500px;
-  overflow: hidden;
-  img {width: 100%;}
+.hero {
+	display: block;
+	img {width: 100%;}
 }
 
-figcaption {
-  display: block;
-  overflow: hidden;
-  a {float:right;}
+.caption {
+	display: block;
+	overflow: hidden;
 }
 
-.credit {font-size: em(8px); color: #bbb;}
+.credit {
+	float: right;
+	font-size: em(8px); 
+	color: #bbb;
+}

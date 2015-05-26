@@ -1,40 +1,31 @@
-.site-header {
-  width: 100%;
+.header {
   text-align: center;
-  @media (min-width: 800px){text-align: left;}
+  @media (min-width: 50em){text-align: left;}
 }
 
-nav {
-  li {display: inline-block; margin: 0 10px;}
-  a {
-    font-size: em(14px); 
-    text-decoration: none; 
-    &:after {display: none;}
-    @media (min-width: 800px){
-      &:after {display: block;}
-    }
+.nav {
+  ul {
+    text-align: center;
+    margin: 0;
+    @media (min-width: 50em){text-align: left;}
   }
+  li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+  a {font-size: .750em;}
 }
 
-.nav-left {
-  li:first-child {margin-left: 0;}
-  li:last-child {margin-right: 0;}
-  @media (min-width: 800px){
-    float: left;  
-  }  
-}
-.nav-right {
-  li:last-child {@include omega;}
-  @media (min-width: 800px){
-    float: right;  
-  }  
-}
+.nav-main {@media (min-width: 50em){float: right; }}
+.nav-social {@media (min-width: 50em){float: left; }}
 
 .site-title {
+  margin-bottom: 2%;
+  display: inline-block;
   &:after {
     display: none;
   }
-  @media (min-width: 800px){
+  @media (min-width: 50em){
     float: left;  
     &:after {
       display: block;
