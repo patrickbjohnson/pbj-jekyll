@@ -1,0 +1,2 @@
+RewriteEngine off
+ErrorDocument 404 /404.html

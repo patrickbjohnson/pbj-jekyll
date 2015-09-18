@@ -1,9 +1,12 @@
+
 <header class="header">
     {% if page.url != "/index.html" %}
      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
     {% endif %}
   <nav class="nav nav-main">
+
     <ul>
+    <li><a class="available" href="#">Available for Freelance</a></li>
       {% for page in site.pages %}
           {% unless page.url == '/404.html' %}
             {% if page.title %}

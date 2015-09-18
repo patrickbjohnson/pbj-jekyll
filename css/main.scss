@@ -6,8 +6,9 @@
 
 @import 'bourbon';
 @import 'neat';
+@import 'variables';
 // Our variables
-$base-font-family: 'Roboto', sans-serif;
+$base-font-family: $body;
 $base-font-size:   18px;
 $small-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
@@ -48,7 +49,6 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "reset",
-    "variables",
     "helpers",
     "social",
     "base",

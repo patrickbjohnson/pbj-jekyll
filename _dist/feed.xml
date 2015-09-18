@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patrick Johnson</title>
+    <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
+    <link>http://pbj.me/</link>
+    <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Sep 2015 23:21:58 -0400</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 23:21:58 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The Hardest Part</title>
+        <description>&lt;p&gt;Programming is a tough line of work. Not because its hard to learn or to implement, but because you constantly face failure. &lt;/p&gt;
+
+&lt;p&gt;The scenario feels identical each time, too.&lt;/p&gt;
+
+&lt;p&gt;You have an idea on how to build something or fix an issue. You get behind your computer and start working. The first solution didn’t work, neither did the second, nor did the third. Twenty minutes turns into an hour which turns into four and at this point you’ve met enough small failures you feel like a big failure yourself. &lt;/p&gt;
+
+&lt;p&gt;You feel frustrated, worried, scared, paralyzed, annoyed and just generally not defeated. You feel like you’re in quicksand and each move you make while in this funk only digs you deeper. &lt;/p&gt;
+
+&lt;p&gt;At some point you ask for help. The person you ask gets it done pretty quickly and now you’ve got two new failures weighing you down: you had to ask for help and now you’re comparing you’re failure to someone else’s success.&lt;/p&gt;
+
+&lt;p&gt;A lot of people say to turn these moments into a learning experience, and I whole-heartedly agree. But sometimes we also have to realize we’re scared, upset or frustrated. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The hardest part isn’t programming. The hardest part is perseverance.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The perseverance to continue in the face of difficulty, no matter how much you know, how fast you’re going or how difficult the task may be. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://pbj.me/writing/the-hardest-part</link>
+        <guid isPermaLink="true">http://pbj.me/writing/the-hardest-part</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>2015 The Goals List</title>
+        <description>&lt;p&gt;An idea came to me at the end of 2014 - in 2015 I would create one thing each month. &lt;/p&gt;
+
+&lt;p&gt;Creating something is fun, but is often hard and takes a long time. Due to this very nature, we often build less than we’d like and never really create a habit of producing our own &lt;em&gt;things&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, I’ve decided to try and release a new project each month and write about it here in hopes of creating a habit of releasing my own creations out into the world. &lt;/p&gt;
+
+&lt;p&gt;Defining a “project” was difficult at first. Should it be personal projects? Should it be client projects? I realized limiting what I make to personal or client categories detracts from the goal of simply &lt;strong&gt;&lt;em&gt;making something&lt;/em&gt;&lt;/strong&gt;. So the goal of producing something each month in 2015 is a mixture of personal projects and client projects.&lt;/p&gt;
+
+&lt;p&gt;The Goals List is on the home page in a listed format. You can also read a little more in-depth on each page, or &lt;a href=&quot;/goals&quot;&gt;check out the goals page as well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/goals&quot; class=&quot;btn btn-project&quot;&gt;View Goals&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://pbj.me/writing/goals</link>
+        <guid isPermaLink="true">http://pbj.me/writing/goals</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Finally A &quot;New&quot; Site</title>
+        <description>&lt;p&gt;It took me forever but I finally built a “new” site. When I say “new” I just mean something that wasn’t a landing page with basically nothing on it. &lt;/p&gt;
+
+&lt;p&gt;This is a bit more built out, granted nothing that’s worth a huge award or “ohh-ing” and “aww-ing”. Just something that is better than what I had before and is an actual system that allows editing/updating to happen a lot easier. &lt;/p&gt;
+
+&lt;p&gt;For this site, I decided to build on a static CMS I haven’t tried before - Jekyll. &lt;/p&gt;
+
+&lt;p&gt;I’m familar with liquid templating but haven’t really used it too much and figured this would be a great opportunity to get into something new for a quick weekend project. &lt;/p&gt;
+
+&lt;p&gt;I’m hoping this new site and CMS will enable me to write more and document my work frequently. I’m totally aware this won’t &lt;em&gt;make&lt;/em&gt; me write, but considering it’s pretty easy, maybe I’ll be more open to the idea of documenting the stuff I do in my life, personally and professionally. &lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://pbj.me/writing/new-site</link>
+        <guid isPermaLink="true">http://pbj.me/writing/new-site</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
