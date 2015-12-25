@@ -2,7 +2,6 @@
 layout: post
 title:  "The Hardest Part"
 date:   2015-09-17
-
 permalink: /writing/the-hardest-part
 summary: "The Hardest Part - The hardest part of programming is perservering."
 ---

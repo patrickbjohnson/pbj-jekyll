@@ -6,6 +6,7 @@ project_type: goals
 permalink: /writing/goals
 summary: "The Goals List - A new way to plan, document, achieve, goals I've set for the year."
 display: active
+crosspost_to_medium: true
 ---
 An idea came to me at the end of 2014 - in 2015 I would create one thing each month. 
 
