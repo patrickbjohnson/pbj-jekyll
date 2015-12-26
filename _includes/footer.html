@@ -1,28 +1,15 @@
-<div class="footer">
-  <nav class="nav nav-social">
-    <ul class="ss-icon">
-      {% if site.twitter %}
-        <li><a href="http://www.twitter.com/{{site.twitter}}" target="_blank">twitter</a></li>
-      {% endif %}
-      {% if site.github %}
-        <li><a href="http://www.github.com/{{site.github}}" target="_blank">github</a></li>
-      {% endif %}
-      {% if site.email %}
-        <li><a href="mailto:{{site.email}}">email</a></li>
-      {% endif %}
-    </ul>
-  </nav>
-  <nav class="nav nav-main">
-    <ul>
-      {% for page in site.pages %}
-        {% unless page.url == '/404.html' %}
-          {% if page.title %}
-            <li>
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            </li>
-          {% endif %}
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+<footer class="footer">
+ 
+  {% include social-list.html %}
+  
+  <div class="site-links">
+    {% for page in site.pages %}
+      {% unless page.url == '/404.html' %}
+        {% if page.title %}
+          <a class="site-links__item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+</footer>

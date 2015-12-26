@@ -1,0 +1,37 @@
+@include font-face('SuperiorTitle-Reg', '/fonts/SuperiorTitle-Regular', 400 , 'normal');
+
+.site-title, 
+h1, h2, h3, 
+h4, h5, h6 {
+	line-height: 1.5;
+}
+
+h1 {font-size: rem(28);}
+
+p {
+	margin-bottom: 15px;
+}
+
+a {
+	color: $color-black;
+	text-decoration: underline;
+
+	@media(min-width: 40em) {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;			
+		}
+	}
+}
+
+	
+strong {
+	font-weight: 600;
+}
+
+.footnote,
+.footnotes {
+	font-size: rem(12);
+}
+.footnote {margin-left: 3px;}

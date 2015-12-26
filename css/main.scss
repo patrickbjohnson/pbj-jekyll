@@ -3,63 +3,46 @@
 ---
 @charset "utf-8";
 
-
 @import 'bourbon';
-@import 'neat';
-@import 'variables';
-// Our variables
-$base-font-family: $body;
-$base-font-size:   18px;
-$small-font-size:  $base-font-size * 1.5;
-$base-line-height: 1.5;
-$base-font-weight: 300;
 
-$spacing-unit:     30px;
+/*-------------------------------------------- */
+/** Reset */
+/*-------------------------------------------- */
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+@import 'base/reset';
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/*-------------------------------------------- */
+/** Variables */
+/*-------------------------------------------- */
 
-// Width of the content area
-$content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;
+@import 'base/variables';
+@import 'base/colors';
+@import 'base/settings';
 
 
+/*-------------------------------------------- */
+/** Utils */
+/*-------------------------------------------- */
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+@import 'utils/mixins';
 
 
+/*-------------------------------------------- */
+/** Base */
+/*-------------------------------------------- */
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "reset",
-    "helpers",
-    "social",
-    "base",
-    "layout",
-    "buttons",
-    "images",
-    "navigation",
-    "footer",
-    "syntax-highlighting",
-    "general",
-    "typography",
-    "articles",
-    "lists"
-;
+@import 'base/base';
+@import 'base/typography';
+
+
+/*-------------------------------------------- */
+/** Layout */
+/*-------------------------------------------- */
+
+@import 'layout/__layouts';
+
+/*-------------------------------------------- */
+/** Modules */
+/*-------------------------------------------- */
+
+@import 'modules/__modules';

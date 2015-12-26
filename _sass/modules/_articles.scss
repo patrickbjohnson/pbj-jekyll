@@ -1,0 +1,48 @@
+.article {
+	@include clearfix;
+
+	a {
+		text-decoration: underline;
+	}
+
+	p {
+		text-indent: rem(16);
+
+	}
+	
+	&__title {
+		text-align: center;
+	}
+
+	&__date {
+		@include table-centered;
+	}
+	
+	&__articles-list {
+		p {
+			margin-top: 0;
+			text-indent: 0;
+		}
+	}
+
+	&__articles-list-item {
+		margin-bottom: 30px;
+
+		p {
+			text-indent: 0;
+		}
+	}
+
+	&__articles-title {
+		margin-bottom: 5px;
+	}
+
+	.btn {
+		text-decoration: none;
+	}
+}
+
+.article-meta {
+	margin: 1.5em 0;
+	text-align: center;
+}
