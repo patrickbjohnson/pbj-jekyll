@@ -29,9 +29,6 @@ $block: social-list;
 		margin-right: 10px;
 		color: $color-black;
 
-		-webkit-transition: color .250s ease-out;
-		transition: color .250s ease-out;
-
 		&:first-child {
 			margin-left: 0;
 		}

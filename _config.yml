@@ -1,6 +1,6 @@
 # Site settings
 title: Patrick Johnson
-email: im@pbj.me
+email: p@pbj.me
 description: Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.
 baseurl: "" # the subpath of your site, e.g. /blog/
 imgurl: '/uploads/'
@@ -9,6 +9,7 @@ twitter: patrickbjohnson
 github:  patrickbjohnson
 dribbble:  pbj
 linkedin:  patrickbjohnson
+thing: yello
 
 # Collections
 collections:
