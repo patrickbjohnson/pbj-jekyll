@@ -6,7 +6,7 @@ h4, h5, h6 {
 	line-height: 1.5;
 }
 
-h1 {font-size: em(28px);}
+h1 {font-size: rem(28);}
 
 p {
 	margin-bottom: 15px;
@@ -30,19 +30,8 @@ strong {
 	font-weight: 600;
 }
 
-dl {
-	margin-top: 25px;
-}
-
-dt {
-	font-size: em(20px);
-	margin-bottom: 5px;
-}
-
-dd {margin-bottom: 50px;}
-
 .footnote,
 .footnotes {
-	font-size: (12px);
+	font-size: rem(12);
 }
 .footnote {margin-left: 3px;}
