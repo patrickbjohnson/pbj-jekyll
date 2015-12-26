@@ -1,21 +1,12 @@
-
-<header class="header">
-    {% if page.url != "/index.html" %}
-     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
-    {% endif %}
-  <nav class="nav nav-main">
-
-    <ul>
-    <li><a class="available" href="#">Available for Freelance</a></li>
-      {% for page in site.pages %}
-          {% unless page.url == '/404.html' %}
-            {% if page.title %}
-              <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-              </li>
-            {% endif %}
-          {% endunless %}
-        {% endfor %}
-    </ul>
+<header class="site-header">
+  <a class="site-header__title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
+  <nav class="site-links" role="navigation">
+    {% for page in site.pages %}
+      {% unless page.url == '/404.html' %}
+        {% if page.title %}
+          <a class="site-links__item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
   </nav>
 </header>

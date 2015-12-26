@@ -1,0 +1,10 @@
+.hero-img {
+	&__caption {
+		font-size: rem(12);
+		float: right;
+	}
+	
+	&__caption > a {
+		color: lighten($color-black, 60%);
+	}
+}

@@ -20,7 +20,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-gems: ['bourbon', 'neat', 'jekyll-crosspost-to-medium']
+gems: ['bourbon', 'jekyll-crosspost-to-medium']
 
 jekyll-crosspost_to_medium:
   enabled: true

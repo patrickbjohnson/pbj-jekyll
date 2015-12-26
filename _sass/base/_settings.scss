@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * BASE SETTINGS
+ *
+ * The settings defined in this file should be updated per project. Any
+ * custom global variables needed for the project should be defined in 
+ * utils/variables.scss
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+
+/*-------------------------------------------- */
+/** File Path Settings */
+/*-------------------------------------------- */
+
+// $img-base-path: '../img';
+// $font-base-path: '../font';
+
+
+/*-------------------------------------------- */
+/** Layout Settings */
+/*-------------------------------------------- */
+
+$is-responsive: true;
+$page-container-width: 800px;
+$page-container-padding: 15px;
+
+
+/*-------------------------------------------- */
+/** Typography Settings */
+/*-------------------------------------------- */
+
+$rem-base: 16px;
+$base-font-size: $rem-base;
+$base-line-height: 1.4;
+
+
+$paragraph-margin: 20px;
+
+$h1-font-size: 34;
+$h2-font-size: 40;
+$h3-font-size: 28;
+$h4-font-size: 22;
+$h5-font-size: 18;
+$h6-font-size: 18;
+
+$p-font-size: 18;
+
+
+// $text-selection-bg-color: $brand-charcoal;
+// $text-selection-foreground-color: $brand-green-light;

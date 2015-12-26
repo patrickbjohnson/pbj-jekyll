@@ -1,0 +1,33 @@
+.content-group {
+	margin-bottom: 40px;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-weight: 500;
+	}
+
+	&__copy {
+		margin-top: 0;
+	}
+	
+	&__list {
+		padding-left: 5px;
+		
+	}
+
+	&__list-item {
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+		&:before {
+			content: "-";
+			float: left;
+		}
+
+		> a {
+			display: block;
+			margin-left: 10px;
+		}
+	}
+}

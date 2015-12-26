@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * MIXINS
+ * 
+ * Define any custom site-wide mixins below. These should only be 
+ * mixins that are global in scope and that need to be referenced 
+ * by multiple SASS files.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+ 
+/*
+ * Mixin to verticaly center any element
+ * whose parent has an explicit height. 
+ * If the parent element does not have an explicit
+ * height then it will not work. 
+ */
+ @mixin vertically-centered {
+    @include transform(translateY(-50%));
+    position: relative;
+    top: 50%;
+ }
+
+/**
+ * Table Centered
+ *
+ * A mixin that will horizontally center any content
+ * without setting an explicit width. This does not effect
+ * text-align properties of the element or child elements.
+ */
+@mixin table-centered {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ // @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+ //   @font-face {
+ //     font-family: $font-family;
+ //       src: url('#{$file-path}.eot');
+ //       src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+ //            url('#{$file-path}.woff') format('woff'),
+ //            url('#{$file-path}.svg##{$font-family}') format('svg');
+ //     font-weight: $font-weight;
+ //     font-style: $font-style;
+ //   }
+ //   // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+ //   @media screen and (-webkit-min-device-pixel-ratio: 0) {
+ //     @font-face {
+ //       font-family: $font-family;
+ //         src: url('#{$file-path}.svg##{$font-family}') format('svg');
+ //     }
+ //   }
+ // }

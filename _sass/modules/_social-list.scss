@@ -1,0 +1,66 @@
+$block: social-list;
+
+.social-list {
+	@include table-centered;
+	
+	@media (max-width: 40em) {
+		margin-bottom: 15px;
+	}
+
+	@media (min-width: 40em) {
+		display: block;
+		float: left;
+	}
+
+	&__item {
+		margin-left: 5px;
+		margin-right: 5px;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		margin-right: 10px;
+		color: $color-black;
+
+		-webkit-transition: color .250s ease-out;
+		transition: color .250s ease-out;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&--twitter {
+			width: 18px;
+			height: 16px;
+
+			&:hover {
+				color: $color-twitter;
+			}
+		}
+
+		&--github {
+			width: 20px;
+			height: 20px;
+
+			&:hover {
+				color: $color-github;
+			}
+		}
+
+		&--email {
+			width: 18px;
+			height: 11px;
+
+			&:hover {
+				color: $color-email;
+			}
+		}
+	}
+}

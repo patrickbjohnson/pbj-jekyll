@@ -1,0 +1,36 @@
+.container {
+	max-width: $page-container-width;
+	padding-left: $page-container-padding;
+	padding-right: $page-container-padding;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section {
+	@include clearfix;
+	margin-bottom: 20px;
+
+	&--with-padding {
+
+		padding-left: 30px;
+		padding-right: 30px;
+
+		@media (min-width: 40em) {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+	}
+}
+
+.two-col {
+	@media (min-width: 40em) {
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
+		-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+		-moz-column-gap: 40px; /* Firefox */
+		column-gap: 40px;
+		column-span: none;
+	}
+
+}
