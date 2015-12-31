@@ -2,7 +2,7 @@
 layout: post
 title:  "The Hardest Part"
 date:   2015-09-17
-permalink: /writing/the-hardest-part
+permalink: /writing/the-hardest-part.html
 summary: "The Hardest Part - The hardest part of programming is perservering."
 ---
 Programming is a tough line of work. Not because its hard to learn or to implement, but because you constantly face failure. 

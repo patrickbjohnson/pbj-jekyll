@@ -2,6 +2,7 @@
 layout: post
 title:  "Host a cookie meetup"
 date:   2015-02-01
+permalink: /goals/002-spilt-milk.html
 site_url:   "https://www.eventbrite.com/e/spilt-milk-beta-tasting-1-tickets-5659271032"
 img: '/uploads/spilt-milk.jpg'
 categories: goals

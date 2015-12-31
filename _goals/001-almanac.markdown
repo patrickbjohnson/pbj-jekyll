@@ -2,6 +2,7 @@
 layout: post
 title:  "Try a new framework"
 date:   2015-01-31
+permalink: /goals/001-almanac.html
 site_url:   "http://www.almanacnyc.com"
 img: '/uploads/foundation.jpg'
 categories: goals
