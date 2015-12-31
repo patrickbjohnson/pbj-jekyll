@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Try a new framework | Patrick Johnson</title>
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="While buildling Almanac, I decided to try out Zurb’s Foundation framework. I figured since it was a Framework I’d have very little ramp-up and would be able to figure out any nuances from their documentation and stackoverflow.">
+
+  <meta property="og:title" content="Try a new framework | Patrick Johnson" />
+  <meta property="og:description" 
+  content="While buildling Almanac, I decided to try out Zurb’s Foundation framework. I figured since it was a Framework I’d have very little ramp-up and would be able to figure out any nuances from their documentation and stackoverflow." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://pbj.me" />
+  <meta property="og:image" content="http://pbj.me/uploads/pbj.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://pbj.me/goals/001-almanac.html">
+  <link rel="alternate" type="application/rss+xml" title="Patrick Johnson" href="http://pbj.me/feed.xml" />
+</head>
+
+
+  <body>
+
+    
+    <div class="container">
+    
+      <header class="site-header">
+  <a class="site-header__title" href="/">Patrick Johnson</a>      
+  <nav class="site-links" role="navigation">
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/about/">About</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/goals/">Goals</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/writing/">Writing</a>
+        
+      
+    
+  </nav>
+</header>
+      
+      <article class="article">
+    <header class="article-header">
+      
+        <figure class="hero-img">
+          <img src="/uploads/foundation.jpg" alt="Try a new framework">
+        </figure>
+      
+
+      <h1 class="article__title">Try a new framework</h1>
+      
+      
+        <small class="article__date">Jan 31, 2015</small>
+      
+    </header>
+
+    <section class="content">
+      <p>While buildling Almanac, I decided to try out Zurb’s Foundation framework. I figured since it was a Framework I’d have very little ramp-up and would be able to figure out any nuances from their documentation and stackoverflow.</p>
+
+<p>I was interested to play with Foundation since I’ve only messed with Bootstrap out of client necessity so I figured this would be a great chance to learn a new framework to better way my options.</p>
+
+<p>Since I use Grunt in my workflow I knew I could just integrate Foundation into my process pretty easily. But then realized since this site was built on Wordpress, it might get a little tricky. Luckily the world of open-sourced projects came to save the day and I was able to use FoundationPress which did exactly what I needed.</p>
+
+<p>Aside from FoundationPress’ few opinions the framework integrated into the project seamlessly. I noticed however that Foundation has a few caveats of its own. Things like floating the last item in a row to the right and what not had to be overridden but nothing within Foundation ever really held up my process.</p>
+
+<p>FoundationPress, however, did have a few hiccups along the way. The size of the project itself was enormous. For the first time in my development career I hit IE’s 4095 selector limits. Upon further inspection <em>all</em> of Foundation was being included in this project and I’d need to cut stuff down to only the necessities in order to work in IE9.</p>
+
+<p>Other than the one small hiccup of IE’s selector rule everything went pretty smoothly. I happen to like the difference in naming (or opinion) that Foundation carries when it comes to rows<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Not sure I have a clear winner in the framework game but this gave me a good opportunity to try something new while still being productive.</p>
+
+<p><a class="btn btn-project" href="http://www.almanacnyc.com" target="_blank">Visit Project</a></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>As opposed to Bootstrap’s style having a parent container on rows. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section>
+</article>
+
+      <footer class="footer">
+ 
+  <div class="social-list">
+
+  <a class="social-list__item" href="http://www.twitter.com/patrickbjohnson" target="_blank">
+  	<svg class="social-list__icon social-list__icon--twitter" viewBox="0 0 25 22">
+  	  <use xlink:href="/images/icons.svg#twitter"></use>
+  	</svg>
+  </a>
+
+
+  <a class="social-list__item" href="http://www.github.com/patrickbjohnson" target="_blank">
+  	<svg class="social-list__icon social-list__icon--github" viewBox="0 0 33 33">
+  	  <use xlink:href="/images/icons.svg#github"></use>
+  	</svg>
+  </a>
+
+
+  <a class="social-list__item" href="mailto:p@pbj.me">
+  	<svg class="social-list__icon social-list__icon--email" viewBox="0 0 10 6">
+  	  <use xlink:href="/images/icons.svg#email"></use>
+  	</svg>
+  </a>
+
+</div>
+
+
+
+
+
+
+  
+  <div class="site-links">
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/about/">About</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/goals/">Goals</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/writing/">Writing</a>
+        
+      
+    
+  </div>
+
+</footer>
+      
+    </div>
+
+
+    
+    <script defer async src="/js/vendor/svg4everybody.min.js"></script>
+<script type="text/javascript">
+
+	svg4everybody();
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10914801-4']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+
+  </body>
+  
+</html>

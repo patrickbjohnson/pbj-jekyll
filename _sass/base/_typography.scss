@@ -30,6 +30,12 @@ strong {
 	font-weight: 600;
 }
 
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px solid $color-gray;
+}
+
 .footnote,
 .footnotes {
 	font-size: rem(12);
