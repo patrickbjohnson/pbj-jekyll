@@ -9,7 +9,6 @@ twitter: patrickbjohnson
 github:  patrickbjohnson
 dribbble:  pbj
 linkedin:  patrickbjohnson
-thing: yello
 
 # Collections
 collections:
@@ -20,6 +19,7 @@ collections:
 
 
 # Build settings
+permalink:        /writing/:title
 markdown: kramdown
 gems: ['bourbon', 'jekyll-crosspost-to-medium']
 

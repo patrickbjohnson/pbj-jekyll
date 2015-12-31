@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "3rd Season of The Start"
+permalink: /goals/003-the-start.html
 date:   2015-08-15
 site_url:   "http://thestart.fm"
 img: '/uploads/the-start-podcast.jpg'

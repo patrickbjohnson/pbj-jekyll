@@ -3,7 +3,7 @@ layout: post
 title:  "2015 The Goals List"
 date:   2015-02-01
 project_type: goals
-permalink: /writing/goals
+permalink: /writing/goals.html
 summary: "The Goals List - A new way to plan, document, achieve, goals I've set for the year."
 crosspost_to_medium: true
 ---
