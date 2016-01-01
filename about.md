@@ -30,4 +30,4 @@ And thats's where I am now. I'm a web developer and I love what I do. Everyday I
 I build at work, I build for freelance clients, I build for personal projects and just to learn new things. I wouldn't have it any other way. 
 
 ### How To Reach Me
-Want to reach out? Maybe to just chat? Maybe becauase you'd like to work together? You can [email me](mailto:{{site.email}}), [tweet me](https://www.twitter.com/{{site.twitter}}), [find me on github](https://www.twitter.com/{{site.github}}) or [dribbble](https://www.twitter.com/{{site.dribbble}}).
+Want to reach out? Maybe to just chat? Maybe becauase you'd like to work together? You can [email me](mailto:{{site.email}}), [tweet me](https://www.twitter.com/{{site.twitter}}), [find me on github](https://www.github.com/{{site.github}}) or [dribbble](https://www.dribbble.com/{{site.dribbble}}).
