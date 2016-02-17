@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Soma Water | Patrick Johnson</title>
+  <title>Expand The Room | Patrick Johnson</title>
   <meta property="og:locale" content="en_US" />
   <meta name="description" content="">
 
-  <meta property="og:title" content="Soma Water | Patrick Johnson" />
+  <meta property="og:title" content="Expand The Room | Patrick Johnson" />
   <meta property="og:description" 
   content="" />
   <meta property="og:type" content="website" />
@@ -20,7 +20,7 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://pbj.me/work/soma-water">
+  <link rel="canonical" href="http://pbj.me/work/expand-the-room">
   <link rel="alternate" type="application/rss+xml" title="Patrick Johnson" href="http://pbj.me/feed.xml" />
 </head>
 
@@ -72,17 +72,20 @@
       <article class="article">
     <header class="article-header">
       
+        <figure class="hero-img">
+          <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c" alt="Expand The Room">
+        </figure>
+      
 
-      <h1 class="article__title">Soma Water</h1>
+      <h1 class="article__title">Expand The Room</h1>
       
       
-        <small class="article__date">Jan 26, 2014</small>
+        <small class="article__date">Jul 20, 2015</small>
       
     </header>
 
     <section class="content">
       
-
     </section>
 </article>
 

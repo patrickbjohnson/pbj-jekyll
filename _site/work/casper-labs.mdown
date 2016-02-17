@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Soma Water | Patrick Johnson</title>
+  <title>Casper Labs | Patrick Johnson</title>
   <meta property="og:locale" content="en_US" />
   <meta name="description" content="">
 
-  <meta property="og:title" content="Soma Water | Patrick Johnson" />
+  <meta property="og:title" content="Casper Labs | Patrick Johnson" />
   <meta property="og:description" 
   content="" />
   <meta property="og:type" content="website" />
@@ -20,7 +20,7 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://pbj.me/work/soma-water">
+  <link rel="canonical" href="http://pbj.me/work/casper-labs">
   <link rel="alternate" type="application/rss+xml" title="Patrick Johnson" href="http://pbj.me/feed.xml" />
 </head>
 
@@ -73,16 +73,15 @@
     <header class="article-header">
       
 
-      <h1 class="article__title">Soma Water</h1>
+      <h1 class="article__title">Casper Labs</h1>
       
       
-        <small class="article__date">Jan 26, 2014</small>
+        <small class="article__date">Feb 5, 2016</small>
       
     </header>
 
     <section class="content">
       
-
     </section>
 </article>
 

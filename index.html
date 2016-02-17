@@ -12,7 +12,8 @@ layout: default
     <h2 class="content-group__title">Work</h2>
     <p class="content-group__copy">A few of my favorite projects (full-time and freelance) </p>
     <ul class="content-group__list list-unstyled two-col">
-     {% for work in site.work %}
+      {% assign items = site.work | sort: 'date' %}
+     {% for work in site.work reversed %}
      <li class="content-group__list-item">
        <a href="{{ work.site_url }}" target="_blank">{{work.title}}</a>
      </li>

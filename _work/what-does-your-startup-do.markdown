@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What Does Your Startup Do?"
-date:   2015-02-28
+date:   2013-10-25
 site_url:   "http://whatdoesyourstartupdo.co/"
 img: 'https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c'
 categories: responsive mobile front-end

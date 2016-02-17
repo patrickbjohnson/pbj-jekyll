@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Travel + Leisure World's Best"
+date:   2015-07-07
+site_url:   "http://www.travelandleisure.com/worlds-best"
+project_type: website
+---
