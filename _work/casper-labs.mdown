@@ -2,6 +2,6 @@
 layout: post
 title:  "Casper Labs"
 date:   2016-02-05
-site_url:   "http://www.casperlabs.com/"
+site_url:   "http://casperlabs.com/"
 project_type: website
 ---
