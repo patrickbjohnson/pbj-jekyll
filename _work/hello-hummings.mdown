@@ -2,6 +2,6 @@
 layout: post
 title:  "Hummings"
 date:   2015-06-24
-site_url:   "https://www.hellohummings.com/"
+site_url:   "http://www.hellohummings.com/"
 project_type: website
 ---
