@@ -2,6 +2,6 @@
 layout: post
 title:  "Troegs Brewery"
 date:   2015-11-02
-site_url:   "http://www.travelandleisure.com/worlds-best"
+site_url:   "http://troegs.com/"
 project_type: website
 ---
