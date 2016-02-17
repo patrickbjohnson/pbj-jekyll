@@ -72,10 +72,6 @@
       <article class="article">
     <header class="article-header">
       
-        <figure class="hero-img">
-          <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c" alt="Expand The Room">
-        </figure>
-      
 
       <h1 class="article__title">Expand The Room</h1>
       
