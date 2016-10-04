@@ -2,11 +2,8 @@
 	@include clearfix;
 
 	a {
+		color: $color-blue;
 		text-decoration: underline;
-	}
-
-	p {
-		text-indent: rem(16);
 	}
 	
 	&__title {

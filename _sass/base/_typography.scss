@@ -10,6 +10,10 @@ h1 {font-size: rem(28);}
 
 p {
 	margin-bottom: 15px;
+
+	&:first-of-type {
+		text-indent: rem(16);
+	}
 }
 
 a {
@@ -34,6 +38,17 @@ hr {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border: 1px solid $color-gray;
+}
+
+blockquote {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+	font-weight: 600;
+
+	> p {
+		text-indent: 0 !important;
+	}
 }
 
 .footnote,
