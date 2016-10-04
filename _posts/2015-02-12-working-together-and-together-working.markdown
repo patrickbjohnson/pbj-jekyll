@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Working Together and Together Working"
-date:   2015-01-31
-img: "http://media1.giphy.com/media/MQQwcpjOLD64U/giphy.gif"
+date:   2016-10-04
+img: '/uploads/teamwork.jpg'
 permalink: /writing/working-together.html
-summary: I finally got around to making a new site!
+summary: "A developers take on creating great products as a team"
+crosspost_to_medium: true
 ---
 I [read an article on Smashing Magazine](https://www.smashingmagazine.com/2016/08/developers-own-code-should-designers-own-experience/), which, on first read, infuriated me as a developer. After reading a second time it was clear to see the author, a user-experience designer, was also frustrated but saw the light at the end of the tunnel. And the light, in this case, was teamwork. The topic in question: the working relationship between designers and developers. 
 

@@ -4,7 +4,7 @@ title:  "Finally A \"New\" Site"
 date:   2015-01-31
 img: "http://media1.giphy.com/media/MQQwcpjOLD64U/giphy.gif"
 permalink: /writing/new-site.html
-summary: I finally got around to making a new site!
+summary: "I finally got around to making a new site!"
 ---
 It took me forever but I finally built a "new" site. When I say "new" I just mean something that wasn't a landing page with basically nothing on it. 
 
