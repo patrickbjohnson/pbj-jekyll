@@ -597,16 +597,22 @@ blockquote {
   color: #bbbbbb; }
 
 .btn {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
   display: table;
-  padding: 10px 20px;
-  margin: 35px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
   text-indent: 0;
   color: #fff;
   background: #222;
-  text-decoration: none;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease; }
+  text-decoration: none; }
   .btn:hover {
     background: #626262; }
 
@@ -642,7 +648,7 @@ blockquote {
       content: "-";
       float: left; }
     .content-group__list-item > a {
-      display: block;
+      display: inline-block;
       margin-left: 10px; }
 
 .article::after {
@@ -668,7 +674,8 @@ blockquote {
 .article__articles-title {
   margin-bottom: 5px; }
 .article .btn {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 .article-meta {
   margin: 1.5em 0;
