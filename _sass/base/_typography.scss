@@ -1,7 +1,7 @@
 @include font-face('SuperiorTitle-Reg', '/fonts/SuperiorTitle-Regular', 400 , 'normal');
 
-.site-title, 
-h1, h2, h3, 
+.site-title,
+h1, h2, h3,
 h4, h5, h6 {
 	line-height: 1.5;
 }
@@ -10,10 +10,6 @@ h1 {font-size: rem(28);}
 
 p {
 	margin-bottom: 15px;
-
-	&:first-of-type {
-		text-indent: rem(16);
-	}
 }
 
 a {
@@ -24,12 +20,12 @@ a {
 		text-decoration: none;
 
 		&:hover {
-			text-decoration: underline;			
+			text-decoration: underline;
 		}
 	}
 }
 
-	
+
 strong {
 	font-weight: 600;
 }
