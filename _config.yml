@@ -14,7 +14,9 @@ linkedin:  patrickbjohnson
 collections:
   work:
     output: true
-  goals: 
+  goals:
+    output: true
+  fire-meetup:
     output: true
 
 

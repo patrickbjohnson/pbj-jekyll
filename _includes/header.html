@@ -1,8 +1,8 @@
 <header class="site-header">
-  <a class="site-header__title" href="{{ site.baseurl }}/">{{ site.title }}</a>      
+  <a class="site-header__title" href="{{ site.baseurl }}/">{{ site.title }}</a>
   <nav class="site-links" role="navigation">
     {% for page in site.pages %}
-      {% unless page.url == '/404.html' %}
+      {% unless page.exclude %}
         {% if page.title %}
           <a class="site-links__item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         {% endif %}
