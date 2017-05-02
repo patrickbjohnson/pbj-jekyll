@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 2 - May 01, 2017"
 date:   2017-05-01
-permalink: /fire-meetup/week-2
+permalink: /fire-meetup/week-2.html
 display: active
 exclude: true
 ---
