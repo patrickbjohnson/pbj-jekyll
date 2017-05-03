@@ -12,7 +12,6 @@ exclude: true
 - [http://rockstarfinance.com/](http://rockstarfinance.com/)
 - [http://eatthefinancialelephant.com/](http://eatthefinancialelephant.com/)
 - [http://www.frugalwoods.com/](http://www.frugalwoods.com/)
-- [http://www.frugalwoods.com/](http://www.frugalwoods.com/)
 - [http://travelisfree.com/](http://travelisfree.com/)
 - [https://ournextlife.com/](https://ournextlife.com/)
 - [http://www.choosefi.com/](http://www.choosefi.com/)
