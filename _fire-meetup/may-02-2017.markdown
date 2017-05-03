@@ -6,11 +6,7 @@ permalink: /fire-meetup/week-2.html
 display: active
 exclude: true
 ---
-## Links from May 1, 2017 meetup:
-
-I'm missing one and I believe it reads as: "choorefl.com"
-
-If anyone can help us find that it would be very helpful!
+## Links:
 
 - [http://www.gocurrycracker.com/](http://www.gocurrycracker.com/)
 - [http://rockstarfinance.com/](http://rockstarfinance.com/)
@@ -19,6 +15,7 @@ If anyone can help us find that it would be very helpful!
 - [http://www.frugalwoods.com/](http://www.frugalwoods.com/)
 - [http://travelisfree.com/](http://travelisfree.com/)
 - [https://ournextlife.com/](https://ournextlife.com/)
+- [http://www.choosefi.com/](http://www.choosefi.com/)
 - [http://www.slowlysippingcoffee.com/](http://www.slowlysippingcoffee.com/)
 - [http://www.slowlysippingcoffee.com/the-lightbulb-emails/](http://www.slowlysippingcoffee.com/the-lightbulb-emails/)
 - [http://www.travelmiles101.com/](http://www.travelmiles101.com/)
