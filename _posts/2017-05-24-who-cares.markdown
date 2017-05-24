@@ -3,6 +3,7 @@ layout: post
 title:  "Who Cares?"
 date:   2017-05-24
 permalink: /writing/who-cares.html
+crosspost_to_medium: true
 ---
 
 * Does your app work with Vue.js even though all your friends are using React.js? If yes, then who cares.
