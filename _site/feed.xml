@@ -5,9 +5,55 @@
     <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
     <link>http://pbj.me/</link>
     <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 May 2017 23:03:15 -0400</pubDate>
-    <lastBuildDate>Tue, 02 May 2017 23:03:15 -0400</lastBuildDate>
+    <pubDate>Wed, 24 May 2017 13:05:12 -0400</pubDate>
+    <lastBuildDate>Wed, 24 May 2017 13:05:12 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Who Cares?</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Does your app work with Vue.js even though all your friends are using React.js? If yes, then who cares.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do you still get work without having a portfolio? If yes, then who cares?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do you learn better from reading books instead of watching videos? If yes, then who cares?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do you earn money by building sites with PHP instead of a Ruby (on Rails)? If yes, then who cares?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Did you just buy new running shoes right before the new All Birds released? If yes, who cares?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Did you learn JavaScript by way of  jQuery? If yes, who cares?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This list could go on forever but you get the picture. The reality with our work, and our lives, is we all do things differently. Unless you’re doing something really wrong, who cares?&lt;/p&gt;
+
+&lt;p&gt;If your intentions are well-formed and your work is well-crafted all that matters is helping someone, or something, progress forward.&lt;/p&gt;
+
+&lt;p&gt;You may not work at the hottest startup or on the newest product. If you enjoy your life, work and everything in between then who cares about what others are doing? You don’t need to follow the “herd” to be happy. You can achieve your personal, professional and financial (or any other) goals by following your intuition, gut and common sense. You can be you and still be happy.&lt;/p&gt;
+
+&lt;p&gt;We could spend our days arguing over skeuomorphic design vs flat and the “resurgence” of brutalist sites but will it make our lives, our customers’ lives, or families’ lives better?&lt;/p&gt;
+
+&lt;p&gt;Sure, you can have an opinion, you can voice it, you can scream it from the tallest rooftops but here’s the kicker, &lt;strong&gt;your opinion may not be someone’s fact&lt;/strong&gt;. It isn’t a truth to be told and held over the heads of others in or outside our industry. Your way of doing something may be right for you and your organization, but it may wrong for a friend or another company.&lt;/p&gt;
+
+&lt;p&gt;Our peers are a good barometer for quality but we still must trust our gut to find the right fit, tool, direction. And ultimately, who cares if the decision you make goes directly against the herd as long as you’re happy and it’s positive for you without negatively impacting others.&lt;/p&gt;
+
+&lt;p&gt;Continue to be you, try new things and be open. If you pause because of what other’s may think just ask yourself one question - who cares?&lt;/p&gt;
+
+&lt;p&gt;Big thanks to &lt;a href=&quot;http://graybike.co/&quot;&gt;Pavan Trikutam&lt;/a&gt;, &lt;a href=&quot;http://sandpiper.co/&quot;&gt;Monte Brown&lt;/a&gt;, &lt;a href=&quot;http://www.sofetch.io/&quot;&gt;Corey Grusden&lt;/a&gt; and &lt;a href=&quot;http://www.kylecrawford.co/&quot;&gt;Kyle Crawford&lt;/a&gt; for reviewing and editing this post before publishing.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 May 2017 00:00:00 -0400</pubDate>
+        <link>http://pbj.me/writing/who-cares.html</link>
+        <guid isPermaLink="true">http://pbj.me/writing/who-cares.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Year In Review - 2016</title>
