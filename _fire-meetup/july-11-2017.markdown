@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Week 4 - July 11, 2017"
+date:   2017-07-11
+permalink: /fire-meetup/week-4.html
+display: active
+exclude: true
+---
+## Links:
+
+- [Atlantic Article - The Secret Shame of Middle-Class Americans](https://www.theatlantic.com/magazine/archive/2016/05/my-secret-shame/476415/)
+- [Book - Your Money or Your Life](https://www.amazon.com/Your-Money-Life-Transforming-Relationship-ebook/dp/B0052MD8VO/ref=sr_1_1?ie=UTF8&qid=1499745795&sr=8-1&keywords=your+money+or+your+life)
+- [Choose FI](http://www.choosefi.com/)
+- [Neighborhood Assistance Corporation of America](http://naca.com)
+- [3% Checking Account](https://www.lmcu.org/banking/checking/checking_max.aspx)
+- [Mobile Virtual Network Operator (MVNO)](http://buzzmobile.us/mvno-list/)
+- [Doctor Of Credit](http://www.doctorofcredit.com/)
+- [Reddit Credit Card Churning](https://www.reddit.com/r/churning/)
+- [Early Retirement Now](https://earlyretirementnow.com/)
+- [The Green Swan](http://www.thegreenswan.org/)
+- [Mad Fientist](http://www.madfientist.com/)
+- [IRS IRA Contribution Limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits)
+- [Vanguard Total World Stock Index](https://personal.vanguard.com/us/funds/snapshot?FundId=0628&FundIntExt=INT)
+- [Vanguard Total Stock Market Index](https://personal.vanguard.com/us/funds/snapshot?FundId=0585&FundIntExt=INT)
+- [Go Curry Cracker Roth Sucks Article](http://www.gocurrycracker.com/roth-sucks/)
+- [Lemonade Insurance](https://www.lemonade.com/)
+- [Patrick's PayPal](https://paypal.me/patrickbjohnson)
+- [Patrick's Venmo](https://venmo.com/patrickbjohnson)
+- [Patrick's Square Cash](https://cash.me/$pbj)
