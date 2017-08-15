@@ -31,4 +31,6 @@ exclude: true
 - [CleanFoodDirtyCity.com](http://www.cleanfooddirtycity.com/)
 - [Never Pay Taxes Again - Go Curry Cracker](http://www.gocurrycracker.com/never-pay-taxes-again/)
 - [Root of Good](http://rootofgood.com/)
-
+- [Patrick's PayPal](https://paypal.me/patrickbjohnson)
+- [Patrick's Venmo](https://venmo.com/patrickbjohnson)
+- [Patrick's Square Cash](https://cash.me/$pbj)
