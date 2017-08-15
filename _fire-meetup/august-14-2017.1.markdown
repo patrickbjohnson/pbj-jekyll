@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Week 5 - August 14, 2017"
+date:   2017-08-14
+permalink: /fire-meetup/week-5.html
+display: active
+exclude: true
+---
+
+## Links:
+- [Early Retirement Now](https://earlyretirementnow.com/)
+- [Trinity Study](https://en.wikipedia.org/wiki/Trinity_study)
+- [Tulip Craze](https://en.wikipedia.org/wiki/Tulip_mania)
+- [Larry Swedrow](http://www.etf.com/contributors/larry-swedroe?nopaging=1)
+- [CFire Sim](http://www.cfiresim.com/)
+- [Afford Anything article Paul pant](http://www.madfientist.com/afford-anything-interview/)
+- [NYTimes Housing Calculator](https://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html)
+- [Choose FI Podcast](http://www.choosefi.com/category/podcast-episodes/)
+- [JL Collins - Why Houses Your House is a Terrible Investment](http://jlcollinsnh.com/2013/05/29/why-your-house-is-a-terrible-investment/)
+- [r/financialindependence](https://www.reddit.com/r/financialindependence/)
+- [Subtle Art of Not Giving a Fuck](https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713)
+- [r/mealprep](https://www.reddit.com/r/mealprep/)
+- [Tax Loss Harvesting](http://www.investopedia.com/articles/taxes/08/tax-loss-harvesting.asp)
+- [NACA](https://www.naca.com/)
+- [Roofstock.com](https://www.roofstock.com/)
+- [Fundrise](https://fundrise.com/)
+- [Vanguard REIT Fund](https://personal.vanguard.com/us/funds/snapshot?FundIntExt=INT&FundId=0986)
+- [NYPL Kanopy](https://nypl.kanopystreaming.com/frontpage)
+- [Libby](https://meet.libbyapp.com/)
+- [Overdrive](https://www.overdrive.com/)
+- [CleanFoodDirtyCity.com](http://www.cleanfooddirtycity.com/)
+- [Never Pay Taxes Again - Go Curry Cracker](http://www.gocurrycracker.com/never-pay-taxes-again/)
+- [Root of Good](http://rootofgood.com/)
+
