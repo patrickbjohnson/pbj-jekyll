@@ -3,6 +3,7 @@ layout: post
 title:  "What Is Burnout?"
 date:   2017-09-05
 permalink: /writing/what-is-burnout.html
+crosspost_to_medium: true
 ---
 
 There are tons of posts about preventing burnout. But I’ve found far fewer posts discussing what leads to, and defines, burnout. Here is an attempt of describing those things. If for the least, for my own personal experience. 
