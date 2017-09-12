@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Week 5 - August 14, 2017"
+title:  "Month 5 - August 14, 2017"
 date:   2017-08-14
-permalink: /fire-meetup/week-5.html
+permalink: /fire-meetup/month-5.html
 display: active
 exclude: true
 ---
