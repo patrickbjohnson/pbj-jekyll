@@ -8,6 +8,7 @@ exclude: true
 ---
 
 ## Links:
+- [Slack Community](https://fire-community.herokuapp.com/)
 - [How To Retire Early: Your Guide To Getting Rich Slowly](https://www.amazon.com/dp/B00C1T16H4/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
 - [Resource Generation Retreat](http://resourcegeneration.org/making-money-make-change/)
 - [Admiral Shares](https://investor.vanguard.com/mutual-funds/admiral-shares)
