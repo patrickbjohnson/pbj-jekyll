@@ -30,6 +30,7 @@ exclude: true
 - [MadFientist Interviews Vicki Robin](https://www.madfientist.com/vicki-robin-interview/)
 - [Kitces - Mega Backdoor Roth](https://www.kitces.com/blog/irs-notice-2014-54-acquiesces-on-splitting-after-tax-401k-contributions-for-roth-conversion/)
 - [Mad Fientist Interviews Michael Kitces](https://www.madfientist.com/michael-kitces-interview/)
+- [401K Calculators](http://www.bankrate.com/calculators/retirement/self-employed-401-k-calculator.aspx)
 - [Patrick's PayPal](https://paypal.me/patrickbjohnson)
 - [Patrick's Venmo](https://venmo.com/patrickbjohnson)
 - [Patrick's Square Cash](https://cash.me/$pbj)
