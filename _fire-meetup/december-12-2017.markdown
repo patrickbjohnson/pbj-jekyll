@@ -22,6 +22,7 @@ exclude: true
 - [GoCurryCracker - Why I Hate The Roth](https://gocurrycracker.com/roth-sucks/)
 - [Coach Carson - Real Estate](https://www.coachcarson.com/)
 - [Afford Anything Podcast Ep. 103](http://podcast.affordanything.com/lessons-money-work-life/)
+- [Solo 401k Provider - www.discountsolo401k.com](https://www.biggerpockets.com/forums/51/topics/436882-discount-solo-401k-com)
 - [Finding Mastery - Microsoft CFO Interview](https://findingmastery.net/amy-hood/)
 - [Patrick's PayPal](https://paypal.me/patrickbjohnson)
 - [Patrick's Venmo](https://venmo.com/patrickbjohnson)
