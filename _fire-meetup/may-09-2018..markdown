@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Month 13 - May 08, 2018"
+date:   2018-05-08
+permalink: /fire-meetup/month-13.html
+display: active
+exclude: true
+---
+
+## Links:
+- [The IRA aggregation rule](https://www.kitces.com/blog/the-impact-of-the-ira-aggregation-rule-on-after-tax-distributions-roth-conversions-60-day-rollovers-rmds-and-72t-payments/)
+- [How a 27-Year-Old Math Whiz (and His Uber Driver) Found a Big Flaw in an IRS Tax Formula - YAY SAM!](http://time.com/money/5237795/irs-tax-problem-obamacare-subsidy/)
+- [Self-Employed ACA Subsidy Calculator](https://cims.nyu.edu/~ferguson/Calculator%20SE%20ACA.html)
+- [FI Sub-Reddit](https://www.reddit.com/r/financialindependence/)
+- [Madfienest](https://www.madfientist.com/)
+- [Bigger Pockets Money](https://www.biggerpockets.com/moneyshow)
+- [Choose FI podcast](https://www.choosefi.com/category/podcast-episodes/)
+- [Simple Path To Wealth](https://www.amazon.com/dp/B01H97OQY2/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+- [Afford Anything Podcast by Paula Pant](https://affordanything.com/)
+- [Early Retirement Now](https://earlyretirementnow.com/)
+- [Van Dwelling Reddit](https://www.reddit.com/r/vandwellers/)
+- [Making Sense of Cents - Van Life](https://www.makingsenseofcents.com/2018/05/why-i-love-living-in-a-vehicle.html)
+- [Living on a cruise ship - Reddit](https://www.reddit.com/r/financialindependence/comments/8gz3bl/fire_of_the_seas_spending_20_years_of_retirement/ )
+- [Michael Kitces FI tax planning](https://www.kitces.com/financial-planning-solutions-for-consumers/)
+- [The Wealthy Accountant - MMM Accountant](https://wealthyaccountant.com/)
+- [Shane Mason - Brooklyn Based FI Accountant](http://www.shanemasoncpa.com/)
+- [Boggle heads Meetup](https://www.bogleheads.org/forum/viewtopic.php?t=116978&start=200#p3893681 )
+- [Safe withdrawal series with Early Retirement Now](https://earlyretirementnow.com/2016/12/07/the-ultimate-guide-to-safe-withdrawal-rates-part-1-intro/)
+- [Investment decay](https://seekingalpha.com/article/1864191-what-you-need-to-know-about-the-decay-of-leveraged-etfs)
+- [Giving Publicly Traded Stock To Charity - AVC, Fred Wilson](https://avc.com/2018/05/giving-publicly-traded-stock-to-charity/)
+- [Retire Early & Often](https://www.leisurefreak.com/retiring-early-and-often/)
+- [The Wedding Budget Calculator](https://theweddingcalculator.com/)
+- [Choose Fi Podcast - Failing Forward with Jamila Souffrant](https://www.choosefi.com/073-jamila-souffrant-fail-forward/)
+- [HDFC Cooperatives](http://www1.nyc.gov/site/hpd/owners/homeowner-hdfc.page)
+- [NYC Housing Department Rent Stablized List](https://www1.nyc.gov/site/rentguidelinesboard/resources/rent-stabilized-building-lists.page)
+- [History of May Official Move Day in NYC](https://www.brickunderground.com/live/may-moving-day )
+- [NYC FI/RE Meetup Facebook Group](https://www.facebook.com/groups/170519600291824/)
