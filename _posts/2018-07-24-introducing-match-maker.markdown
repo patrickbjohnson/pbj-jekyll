@@ -3,6 +3,7 @@ layout: post
 title:  "Introducing MatchMaker"
 date:   2018-07-24
 permalink: /writing/introducing-match-maker
+crosspost_to_medium: true
 ---
 
 # MatchMaker
@@ -26,7 +27,7 @@ This approach has noticeable downsides. In each JS module I’d have to do the f
 
 MatchMaker’s purpose is to allow anyone to use the matchMedia API without having to declare a bunch of nonsense, pass in callbacks to match certain queries, fire at relevant moments based on the matchMedia response, and optionally execute (or not) based on the initially executed return value from matchMedia.
 
-The API looks like this: 
+The API looks like this:
 
     matchMaker.register(<MEDIA QUERY STRING>, <NAMED CALLBACK>, <DEFER RUNNING ON LOAD>);
 
