@@ -5,9 +5,76 @@
     <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
     <link>http://pbj.me/</link>
     <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 May 2018 23:49:58 -0400</pubDate>
-    <lastBuildDate>Tue, 08 May 2018 23:49:58 -0400</lastBuildDate>
+    <pubDate>Tue, 24 Jul 2018 17:20:55 -0400</pubDate>
+    <lastBuildDate>Tue, 24 Jul 2018 17:20:55 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Introducing MatchMaker</title>
+        <description>&lt;h1 id=&quot;matchmaker&quot;&gt;MatchMaker&lt;/h1&gt;
+
+&lt;p&gt;Over the last six months I’ve noticed a pattern arise in how I build UI components: the need to enable or disable JavaScript and their accompanying UI components based on viewport size, usually aligned with predefined breakpoints.  The problem lead to a fun little solution:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/mq-match-maker&quot;&gt;MatchMaker - A really small library to make working with matchMedia a little easier&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At first, I went the lazy route: changing the display property in CSS based on a media query. But overtime I realized a lot of unnecessary JavaScript was running behind the scenes.&lt;/p&gt;
+
+&lt;p&gt;Then I moved onto another approach: use the matchMedia API to initialize a new &lt;code class=&quot;highlighter-rouge&quot;&gt;MediaQueryList&lt;/code&gt; object to check if the browser matches the requested media query. This approach felt way better. The JavaScript was deferred or executed by code rather than just hiding the elements using with CSS. The logic was in one place and was easier to see what was happening and why.&lt;/p&gt;
+
+&lt;p&gt;This approach has noticeable downsides. In each JS module I’d have to do the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a new instance of matchMedia with the media query string passed as an argument.&lt;/li&gt;
+  &lt;li&gt;Possibly check and run some JS based on the matchMedia.matches value on load.&lt;/li&gt;
+  &lt;li&gt;Create the event listener&lt;/li&gt;
+  &lt;li&gt;Run the function(s) again (or more functions) when the event listener fires&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;matchmakers-purpose&quot;&gt;MatchMaker’s Purpose&lt;/h3&gt;
+
+&lt;p&gt;MatchMaker’s purpose is to allow anyone to use the matchMedia API without having to declare a bunch of nonsense, pass in callbacks to match certain queries, fire at relevant moments based on the matchMedia response, and optionally execute (or not) based on the initially executed return value from matchMedia.&lt;/p&gt;
+
+&lt;p&gt;The API looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;matchMaker.register(&amp;lt;MEDIA QUERY STRING&amp;gt;, &amp;lt;NAMED CALLBACK&amp;gt;, &amp;lt;DEFER RUNNING ON LOAD&amp;gt;);
+
+matchMaker.deregister(&amp;lt;MEDIA QUERY STRING&amp;gt;, &amp;lt;NAMED CALLBACK&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In actual implementation it may look something like this if you wanted to prevent the function from running immediately:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;matchMaker.register(&#39;(min-width: 600px)&#39;, this.updateAspectRatio, false);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or if you wanted the callback to fire immediately and each time it matches the &lt;code class=&quot;highlighter-rouge&quot;&gt;mediaQuery&lt;/code&gt;
+    matchMaker.register(‘(min-width: 600px)’, this.updateAspectRatio)&lt;/p&gt;
+
+&lt;p&gt;An example of degregistering a named callback&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;matchMaker.deregister(&#39;(min-width: 600px)&#39;, this.updateAspectRatio)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;why-is-this-useful&quot;&gt;Why is this useful?&lt;/h3&gt;
+
+&lt;p&gt;At first I didn’t know if this would be useful to others. It may not be the next Lodash but a few scenarios come to mind that may be helpful for engineers:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/ejvaaZ&quot;&gt;You want to initialize a UI component JS above a viewport width&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/zLwqPG&quot;&gt;Enable or disable click events based on viewport width&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/ZjKZWa&quot;&gt;Reset state based on viewport width&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Download the library here: &lt;a href=&quot;https://www.npmjs.com/package/mq-match-maker&quot;&gt;https://www.npmjs.com/package/mq-match-maker&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Jul 2018 00:00:00 -0400</pubDate>
+        <link>http://pbj.me/writing/introducing-match-maker</link>
+        <guid isPermaLink="true">http://pbj.me/writing/introducing-match-maker</guid>
+        
+        
+      </item>
     
       <item>
         <title>Year In Review - 2017</title>

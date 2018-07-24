@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Introducing MatchMaker | Patrick Johnson</title>
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="MatchMaker">
+
+  <meta property="og:title" content="Introducing MatchMaker | Patrick Johnson" />
+  <meta property="og:description" 
+  content="MatchMaker" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://pbj.me" />
+  <meta property="og:image" content="http://pbj.me/uploads/pbj.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://pbj.me/writing/introducing-match-maker">
+  <link rel="alternate" type="application/rss+xml" title="Patrick Johnson" href="http://pbj.me/feed.xml" />
+</head>
+
+
+  <body>
+
+    
+    <div class="container">
+    
+      <header class="site-header">
+  <a class="site-header__title" href="/">Patrick Johnson</a>
+  <nav class="site-links" role="navigation">
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/about/">About</a>
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/goals/">Goals</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/writing/">Writing</a>
+        
+      
+    
+  </nav>
+</header>
+
+      
+      <article class="article">
+    <header class="article-header">
+      
+
+      <h1 class="article__title">Introducing MatchMaker</h1>
+      
+      
+        <small class="article__date">Jul 24, 2018</small>
+      
+    </header>
+
+    <section class="content">
+      <h1 id="matchmaker">MatchMaker</h1>
+
+<p>Over the last six months I’ve noticed a pattern arise in how I build UI components: the need to enable or disable JavaScript and their accompanying UI components based on viewport size, usually aligned with predefined breakpoints.  The problem lead to a fun little solution:</p>
+
+<p><a href="https://www.npmjs.com/package/mq-match-maker">MatchMaker - A really small library to make working with matchMedia a little easier</a>.</p>
+
+<p>At first, I went the lazy route: changing the display property in CSS based on a media query. But overtime I realized a lot of unnecessary JavaScript was running behind the scenes.</p>
+
+<p>Then I moved onto another approach: use the matchMedia API to initialize a new <code class="highlighter-rouge">MediaQueryList</code> object to check if the browser matches the requested media query. This approach felt way better. The JavaScript was deferred or executed by code rather than just hiding the elements using with CSS. The logic was in one place and was easier to see what was happening and why.</p>
+
+<p>This approach has noticeable downsides. In each JS module I’d have to do the following:</p>
+
+<ol>
+  <li>Create a new instance of matchMedia with the media query string passed as an argument.</li>
+  <li>Possibly check and run some JS based on the matchMedia.matches value on load.</li>
+  <li>Create the event listener</li>
+  <li>Run the function(s) again (or more functions) when the event listener fires</li>
+</ol>
+
+<h3 id="matchmakers-purpose">MatchMaker’s Purpose</h3>
+
+<p>MatchMaker’s purpose is to allow anyone to use the matchMedia API without having to declare a bunch of nonsense, pass in callbacks to match certain queries, fire at relevant moments based on the matchMedia response, and optionally execute (or not) based on the initially executed return value from matchMedia.</p>
+
+<p>The API looks like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>matchMaker.register(&lt;MEDIA QUERY STRING&gt;, &lt;NAMED CALLBACK&gt;, &lt;DEFER RUNNING ON LOAD&gt;);
+
+matchMaker.deregister(&lt;MEDIA QUERY STRING&gt;, &lt;NAMED CALLBACK&gt;);
+</code></pre>
+</div>
+
+<p>In actual implementation it may look something like this if you wanted to prevent the function from running immediately:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>matchMaker.register('(min-width: 600px)', this.updateAspectRatio, false);
+</code></pre>
+</div>
+
+<p>Or if you wanted the callback to fire immediately and each time it matches the <code class="highlighter-rouge">mediaQuery</code>
+    matchMaker.register(‘(min-width: 600px)’, this.updateAspectRatio)</p>
+
+<p>An example of degregistering a named callback</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>matchMaker.deregister('(min-width: 600px)', this.updateAspectRatio)
+</code></pre>
+</div>
+
+<h3 id="why-is-this-useful">Why is this useful?</h3>
+
+<p>At first I didn’t know if this would be useful to others. It may not be the next Lodash but a few scenarios come to mind that may be helpful for engineers:</p>
+
+<ol>
+  <li><a href="https://codepen.io/pbj/pen/ejvaaZ">You want to initialize a UI component JS above a viewport width</a></li>
+  <li><a href="https://codepen.io/pbj/pen/zLwqPG">Enable or disable click events based on viewport width</a></li>
+  <li><a href="https://codepen.io/pbj/pen/ZjKZWa">Reset state based on viewport width</a></li>
+</ol>
+
+<p>Download the library here: <a href="https://www.npmjs.com/package/mq-match-maker">https://www.npmjs.com/package/mq-match-maker</a></p>
+
+    </section>
+</article>
+
+      <footer class="footer">
+
+  <div class="social-list">
+
+  <a class="social-list__item" href="http://www.twitter.com/patrickbjohnson" target="_blank">
+  	<svg class="social-list__icon social-list__icon--twitter" viewBox="0 0 25 22">
+  	  <use xlink:href="/images/icons.svg#twitter"></use>
+  	</svg>
+  </a>
+
+
+  <a class="social-list__item" href="http://www.github.com/patrickbjohnson" target="_blank">
+  	<svg class="social-list__icon social-list__icon--github" viewBox="0 0 33 33">
+  	  <use xlink:href="/images/icons.svg#github"></use>
+  	</svg>
+  </a>
+
+
+  <a class="social-list__item" href="mailto:p@pbj.me">
+  	<svg class="social-list__icon social-list__icon--email" viewBox="0 0 10 6">
+  	  <use xlink:href="/images/icons.svg#email"></use>
+  	</svg>
+  </a>
+
+</div>
+
+
+
+
+
+
+
+  <div class="site-links">
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/about/">About</a>
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <a class="site-links__item" href="/goals/">Goals</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="site-links__item" href="/writing/">Writing</a>
+        
+      
+    
+  </div>
+
+</footer>
+
+      
+    </div>
+
+
+    
+    <script defer async src="/js/vendor/svg4everybody.min.js"></script>
+<script type="text/javascript">
+
+	svg4everybody();
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10914801-4']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<!-- GoSquared -->
+<script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-644141-K');
+</script>
+
+  </body>
+  
+</html>

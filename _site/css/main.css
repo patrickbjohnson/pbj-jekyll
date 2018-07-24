@@ -679,6 +679,15 @@ blockquote {
   margin: 1.5em 0;
   text-align: center; }
 
+pre.highlight {
+  background-color: #ecf0f1;
+  padding: 20px 25px; }
+
+code {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 100%; }
+
 .social-list {
   display: table;
   margin-left: auto;
