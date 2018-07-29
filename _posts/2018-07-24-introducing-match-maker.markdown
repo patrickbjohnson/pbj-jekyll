@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing MatchMaker"
 date:   2018-07-24
-permalink: /writing/introducing-match-maker
+permalink: /writing/introducing-match-maker.html
 crosspost_to_medium: true
 ---
 

@@ -5,8 +5,8 @@
     <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
     <link>http://pbj.me/</link>
     <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jul 2018 17:23:43 -0400</pubDate>
-    <lastBuildDate>Tue, 24 Jul 2018 17:23:43 -0400</lastBuildDate>
+    <pubDate>Sat, 28 Jul 2018 22:06:14 -0400</pubDate>
+    <lastBuildDate>Sat, 28 Jul 2018 22:06:14 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -70,8 +70,8 @@ matchMaker.deregister(&amp;lt;MEDIA QUERY STRING&amp;gt;, &amp;lt;NAMED CALLBACK
 &lt;p&gt;Download the library here: &lt;a href=&quot;https://www.npmjs.com/package/mq-match-maker&quot;&gt;https://www.npmjs.com/package/mq-match-maker&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Jul 2018 00:00:00 -0400</pubDate>
-        <link>http://pbj.me/writing/introducing-match-maker</link>
-        <guid isPermaLink="true">http://pbj.me/writing/introducing-match-maker</guid>
+        <link>http://pbj.me/writing/introducing-match-maker.html</link>
+        <guid isPermaLink="true">http://pbj.me/writing/introducing-match-maker.html</guid>
         
         
       </item>
