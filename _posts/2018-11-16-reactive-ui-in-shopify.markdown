@@ -152,4 +152,4 @@ Rather than just talking about the work, feel free to check out [Colugo's Produc
 <p data-height="265" data-theme-id="0" data-slug-hash="oQZKRz" data-default-tab="css,result" data-user="pbj" data-pen-title="Pub/Sub - Active Element" class="codepen"><a href="https://codepen.io/pbj/pen/oQZKRz/"></a></p>
 
 
-Big thanks to [Zee Spencer](http://www.zeespencer.com/) for reviewing and editing this post before publishing.
+<p>Big thanks to <a href="http://www.zeespencer.com/" target="_blank">Zee Spencer</a> for reviewing and editing this post before publishing.</p>

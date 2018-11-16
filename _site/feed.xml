@@ -5,8 +5,8 @@
     <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
     <link>http://pbj.me/</link>
     <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Nov 2018 16:45:14 -0500</pubDate>
-    <lastBuildDate>Fri, 16 Nov 2018 16:45:14 -0500</lastBuildDate>
+    <pubDate>Fri, 16 Nov 2018 17:05:38 -0500</pubDate>
+    <lastBuildDate>Fri, 16 Nov 2018 17:05:38 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -205,7 +205,7 @@ By leveraging the publisher-subscriber pattern and the built-in events library i
 &lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;oQZKRz&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;pbj&quot; data-pen-title=&quot;Pub/Sub - Active Element&quot; class=&quot;codepen&quot;&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/oQZKRz/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
-Big thanks to [Zee Spencer](http://www.zeespencer.com/) for reviewing and editing this post before publishing.
+&lt;p&gt;Big thanks to &lt;a href=&quot;http://www.zeespencer.com/&quot; target=&quot;_blank&quot;&gt;Zee Spencer&lt;/a&gt; for reviewing and editing this post before publishing.&lt;/p&gt;
 &lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 16 Nov 2018 00:00:00 -0500</pubDate>
