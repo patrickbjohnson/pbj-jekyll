@@ -14,27 +14,15 @@ layout: default
     <ul class="content-group__list list-unstyled two-col">
       {% assign items = site.work | sort: 'date' %}
      {% for work in site.work reversed %}
+     {% unless work.hide == true %}
      <li class="content-group__list-item">
        <a href="{{ work.site_url }}" target="_blank">{{work.title}}</a>
      </li>
+     {% endunless %}
      {% endfor %}
     </ul>
   </div>
-  <div class="content-group">
-    <h2 class="content-group__title"><a href="/goals">Goals</a></h2>
-    <p class="content-group__copy">In 2015 I had a few goals and tried to record them as frequently as possible and I'm doing the same thing in 2016</p>
-    <ul class="content-group__list list-unstyled">
-      {% for goal in site.goals %}
-      <li class="content-group__list-item">  
-        {% if goal.display == 'active' %}
-          <a href="{{goal.url}}">{{goal.title}}</a>
-        {% else  %}
-          {{goal.title}}
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+
   <div class="content-group">
     <h2 class="content-group__title"><a href="/writing">Writing</a></h2>
     <p class="content-group__copy">And sometimes I write about work, life, cookies or just whatever I find intersting.</p>
