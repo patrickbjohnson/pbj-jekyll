@@ -5,9 +5,215 @@
     <description>Patrick Johnson is a front-end developer working in New York City. He helps companies build websites and bakes delicious cookies.</description>
     <link>http://pbj.me/</link>
     <atom:link href="http://pbj.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Nov 2018 21:37:01 -0500</pubDate>
-    <lastBuildDate>Thu, 15 Nov 2018 21:37:01 -0500</lastBuildDate>
+    <pubDate>Fri, 16 Nov 2018 16:45:14 -0500</pubDate>
+    <lastBuildDate>Fri, 16 Nov 2018 16:45:14 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Creating dynamic, reactive UIs for Shopify without React</title>
+        <description>&lt;p&gt;There are a ton of sites on the internet which rely upon Shopify to power their e-commerce needs. Almost all of those websites have interactions which are responsible for a handful of UI-based updates. Managing those UI updates between various JavaScript files can sometimes get carried away, leading to unorganized or closely-coupled code.&lt;/p&gt;
+
+&lt;p&gt;The most recent site I built, &lt;a href=&quot;https://hicolugo.com&quot;&gt;Colugo&lt;/a&gt;, uses Shopify and I ran into this thought while planning the build. I knew I’d need to share component state(s) between components and the site overall. I considered adding React but then decided to use the publisher-subscriber pattern via an events library may be a simpler approach. And as most clickbait articles would say: &lt;em&gt;The results will shock you!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-events-in-shopify&quot;&gt;Using Events in Shopify&lt;/h2&gt;
+&lt;p&gt;It came to my surprise when I found out Shopify has an events library pre-packaged within Slate. By way of Webpack, Shopify ships with an event module, “events.js”, which implements the &lt;a href=&quot;https://www.npmjs.com/package/events&quot;&gt;Node.js events module for browser environments&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This approach can be achieved with any other events module as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;dynamic-reactive-user-interfaces&quot;&gt;Dynamic, Reactive User Interfaces&lt;/h2&gt;
+&lt;p&gt;My goal while building the e-commerce site for Colugo was to reduce direct coupling between my components as much as possible. Using a publisher-subscriber pattern to manage events made decoupling a breeze and ended with a much more organized code base.&lt;/p&gt;
+
+&lt;p&gt;Knowing I’d use this pattern up front enabled me to map out a few components which would require dynamic UI components and what some states would look like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When a user adds an item to the cart
+    &lt;ul&gt;
+      &lt;li&gt;If successful, display the minicart and/or confirmation message&lt;/li&gt;
+      &lt;li&gt;If unsuccessful, display error messaging.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When a user clicks the mobile “cart” icon to display the menu
+    &lt;ul&gt;
+      &lt;li&gt;If the mobile menu is visible, close it and display the mini cart&lt;/li&gt;
+      &lt;li&gt;If the mobile menu is not visible, open the mini cart.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When a user views the product detail page
+    &lt;ul&gt;
+      &lt;li&gt;If a user selects a product color, then scrolls:
+        &lt;ul&gt;
+          &lt;li&gt;Display current color selection&lt;/li&gt;
+          &lt;li&gt;User may update selection&lt;/li&gt;
+          &lt;li&gt;New selection reflected between shared components&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;If a user updates color selection:
+        &lt;ul&gt;
+          &lt;li&gt;Display current quantity&lt;/li&gt;
+          &lt;li&gt;When a user scrolls back up, new quantity should correctly display between shared components&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If we were using React, a lot of this UI interaction would be composed via Redux or a HOC passing props and event handlers to smaller components. Since we can’t easily use React with Shopify we needed another way to share small pieces “state” updates between components.&lt;/p&gt;
+
+&lt;h2 id=&quot;enter-eventjs&quot;&gt;Enter Event.js&lt;/h2&gt;
+
+&lt;h3 id=&quot;using-namespaces-for-organized-events&quot;&gt;Using Namespaces For Organized Events&lt;/h3&gt;
+&lt;p&gt;Because our events were being fired in more than one module, we created a small object which exposed the event “types”. It looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export default eventTypes = {
+    menuUpdate: &#39;colugo:menu-update&#39;,
+    mobileMenuUpdate: &#39;colugo:mobile-nav-update&#39;,
+    cartUpdate: &#39;colugo:cart-update&#39;,
+    variantUpdate: &#39;colugo:variant-update&#39;,
+    productNavUpdate: &#39;colugo:pn-udpate&#39;,
+    miniCartUpdate: &#39;colugo:minicart-update&#39;,
+    recircUpdate: &#39;colugo:recirc-update&#39;,
+    recircCartUpdate: &#39;colugo:recirc-cart-add&#39;,
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This module isn’t special. It provides a consistent way to set up named event publications and subscriptions I know won’t collide within modules.&lt;/p&gt;
+
+&lt;h3 id=&quot;payloads&quot;&gt;Payloads&lt;/h3&gt;
+&lt;p&gt;Within each event, we passed in a payload object which represents the data any and all subscribers could use to update their UI. In the case of Colugo, the payloads were usually:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Product
+    &lt;ul&gt;
+      &lt;li&gt;Variant
+        &lt;ul&gt;
+          &lt;li&gt;ID&lt;/li&gt;
+          &lt;li&gt;Title&lt;/li&gt;
+          &lt;li&gt;Price&lt;/li&gt;
+          &lt;li&gt;Inventory&lt;/li&gt;
+          &lt;li&gt;Color&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cart
+    &lt;ul&gt;
+      &lt;li&gt;Total Count&lt;/li&gt;
+      &lt;li&gt;Items Array&lt;/li&gt;
+      &lt;li&gt;Cart Update (Success or Failure)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Display States
+    &lt;ul&gt;
+      &lt;li&gt;Mini Cart Toggling&lt;/li&gt;
+      &lt;li&gt;Menu Toggling&lt;/li&gt;
+      &lt;li&gt;Newsletter Modals&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;publishing-events&quot;&gt;Publishing Events&lt;/h3&gt;
+&lt;p&gt;Now that we have our namespaces setup along with our payloads, we can publish an event:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import events from &#39;events&#39;
+import eventTypes from &#39;eventTypes&#39;
+
+events.emit(eventTypes.variantUpdate, {
+    ... payload object
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;subscribing-to-events&quot;&gt;Subscribing To Events&lt;/h3&gt;
+&lt;p&gt;Our event bus now makes subscribing events super easy. Bringing together our namespace and payload, subscribing to events looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import events from &#39;events&#39;
+import eventTypes from &#39;eventTypes&#39;
+
+events.on(eventTypes.variantUpdate, (payload) =&amp;gt; {
+    ... run whatever you want
+}));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This separates UI updates from the events themselves. For instance, within Colugo, when a user selects a different product color a few UI changes happen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New color is selected as active&lt;/li&gt;
+  &lt;li&gt;Product variant name is updated&lt;/li&gt;
+  &lt;li&gt;Product price is updated&lt;/li&gt;
+  &lt;li&gt;Product inventory may be updated&lt;/li&gt;
+  &lt;li&gt;Product gallery images may be updated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In past projects, I may have written all the UI changes into one “products.js” file encapsulating all of those DOM elements which make up the UI which changes. While this worked, we also had to keep track of multiple UI components, track which one was changed, when it changed and then propagate changes to other components. In a nutshell, the old approach meant a lot of arrays and looping.&lt;/p&gt;
+
+&lt;p&gt;In the case of Colugo, if a user interacted with the color picker, we subscribe to the &lt;code class=&quot;highlighter-rouge&quot;&gt;variantUpdate&lt;/code&gt; event and call the component methods to update the UI.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import events from &#39;events&#39;
+import eventTypes from &#39;eventTypes&#39;
+
+events.on(eventTypes.variantUpdate, (product) =&amp;gt; {
+    // destructure object for props if necessary
+    //
+    colorPicker.setActiveColor(product.variant.color)
+    productContent.udpateTitle(product.title)
+    productContent.updatePrice(product.price)
+    productContent.updateInveotyr(product.inventoryCount)
+    productGallery.updateGallery(product.variant.images)
+    ...
+    ...
+});
+
+By leveraging the publisher-subscriber pattern and the built-in events library in Webpack we’re able to manage UI changes in a clean, consistent and organized manner. Our footprint is kept to a minimum and UI components (existing or newly made) can easily subscribe to events with very little overhead.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;aside-on-events&quot;&gt;Aside on “events”&lt;/h3&gt;
+&lt;p&gt;Throughout this article we use the term “events”. It’s worth clarifying we are not referring to browser events like “click” or “onchange” event. With the publisher-subscriber pattern, there are no browser events being fired so it can be beneficial for performance as well.&lt;/p&gt;
+
+&lt;p&gt;Helpful reference for further reading:&lt;a href=&quot;https://stackoverflow.com/questions/27677692/performance-cost-of-pubsub-excessive-events-and-event-handlers-in-javascript&quot;&gt;https://stackoverflow.com/questions/27677692/performance-cost-of-pubsub-excessive-events-and-event-handlers-in-javascript&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;irl-examples&quot;&gt;IRL Examples&lt;/h4&gt;
+&lt;p&gt;Rather than just talking about the work, feel free to check out &lt;a href=&quot;https://hicolugo.com/products/compact-stroller?variant=14529068662854&quot;&gt;Colugo’s Product Detail Page&lt;/a&gt; and poke around! You’ll see how pieces of UI interact with one another. Here are a few areas you can look at which take advantage of the publisher-subscriber method and events.js&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Select a color on a product page
+    &lt;ul&gt;
+      &lt;li&gt;This should change the image gallery and some content in the hero&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scroll down and use the sticky color picker to update the color
+    &lt;ul&gt;
+      &lt;li&gt;This will sync up the content and gallery to the new current selection&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add a product to the cart 
+  -If successful, will open the cart and update the cart number count&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;demos&quot;&gt;Demos&lt;/h4&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Pub/Sub - Counter Example&lt;/p&gt;
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;QZPJvR&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;pbj&quot; data-pen-title=&quot;Pub/Sub - Counter Example&quot; class=&quot;codepen&quot;&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/QZPJvR/&quot;&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pub/Sub - Cart Notification&amp;lt;&lt;/p&gt;
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;LgvMga&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;pbj&quot; data-pen-title=&quot;Pub/Sub - Cart Notification&quot; class=&quot;codepen&quot;&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/LgvMga/&quot;&gt;/a&amp;gt;
+
+&lt;p&gt;Pub/Sub - Active Element&lt;/p&gt;
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;oQZKRz&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;pbj&quot; data-pen-title=&quot;Pub/Sub - Active Element&quot; class=&quot;codepen&quot;&gt;&lt;a href=&quot;https://codepen.io/pbj/pen/oQZKRz/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+Big thanks to [Zee Spencer](http://www.zeespencer.com/) for reviewing and editing this post before publishing.
+&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Nov 2018 00:00:00 -0500</pubDate>
+        <link>http://pbj.me/writing/reactive-shopify-ui.html</link>
+        <guid isPermaLink="true">http://pbj.me/writing/reactive-shopify-ui.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Introducing MatchMaker</title>
@@ -847,25 +1053,6 @@ matchMaker.deregister(&amp;lt;MEDIA QUERY STRING&amp;gt;, &amp;lt;NAMED CALLBACK
         <pubDate>Sun, 01 Feb 2015 00:00:00 -0500</pubDate>
         <link>http://pbj.me/writing/goals.html</link>
         <guid isPermaLink="true">http://pbj.me/writing/goals.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Finally A &quot;New&quot; Site</title>
-        <description>&lt;p&gt;It took me forever but I finally built a “new” site. When I say “new” I just mean something that wasn’t a landing page with basically nothing on it.&lt;/p&gt;
-
-&lt;p&gt;This is a bit more built out, granted nothing that’s worth a huge award or “ohh-ing” and “aww-ing”. Just something that is better than what I had before and is an actual system that allows editing/updating to happen a lot easier.&lt;/p&gt;
-
-&lt;p&gt;For this site, I decided to build on a static CMS I haven’t tried before - Jekyll.&lt;/p&gt;
-
-&lt;p&gt;I’m familar with liquid templating but haven’t really used it too much and figured this would be a great opportunity to get into something new for a quick weekend project.&lt;/p&gt;
-
-&lt;p&gt;I’m hoping this new site and CMS will enable me to write more and document my work frequently. I’m totally aware this won’t &lt;em&gt;make&lt;/em&gt; me write, but considering it’s pretty easy, maybe I’ll be more open to the idea of documenting the stuff I do in my life, personally and professionally.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 31 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://pbj.me/writing/new-site.html</link>
-        <guid isPermaLink="true">http://pbj.me/writing/new-site.html</guid>
         
         
       </item>
