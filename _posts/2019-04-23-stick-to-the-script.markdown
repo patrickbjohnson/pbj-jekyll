@@ -3,7 +3,7 @@ layout: post
 title:  "Stick to the Script"
 date:   2019-04-23
 permalink: /writing/stick-to-the-script.html
-# crosspost_to_medium: true
+crosspost_to_medium: true
 ---
 A few weeks ago I responded to a prospective client about scheduling a call. I wrote:
 
